@@ -1450,7 +1450,12 @@
               </profiles>
               <rules>
                 <rule id="fd41-719b-db38-bebf" name="Harbinger of Destruction" hidden="false">
-                  <description></description>
+                  <description>Cible une figurine ennemis à 18&quot;
+o Fait un test d&apos;E
+o si echoue, 3&quot; Blast sur la figurine de la meme force que l&apos;endurance de la cible</description>
+                </rule>
+                <rule id="21e9-0708-ad25-7997" name="Plasmancer" hidden="false">
+                  <description>Tout unité à 6&quot; subit D3 blessure F7 PA3</description>
                 </rule>
               </rules>
               <selectionEntries>
@@ -1464,7 +1469,7 @@
                       <characteristics>
                         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">User</characteristic>
-                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
                       </characteristics>
                     </profile>
@@ -1472,7 +1477,7 @@
                       <characteristics>
                         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
                         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
-                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assaut 3</characteristic>
                       </characteristics>
                     </profile>
