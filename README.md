@@ -6,6 +6,6 @@ Dans ce répertoire se trouve :
 - Les **versions 7,8,9 du jeu de figurine Warhammer 40000 standard**
 - Le jeu de bataille spatiale **Battlefleet Gothic** de l'univers Warhammer 40k
 - Le jeu de bataille grande échelle **Epic Armageddon** de l'univers Warhammer 40k
-- Le jeu **Bolt Action** est une exception pour le moment que je garde dans se répertoire. 
+- Le jeu **Bolt Action** est une exception pour le moment que je garde dans ce répertoire. 
 
 Dans le Wiki sont regroupés toutes les modifications de règles avec lesquelles je joue. La Branch _Vanilia_ regroupe les catalogues originaux sans modifications
