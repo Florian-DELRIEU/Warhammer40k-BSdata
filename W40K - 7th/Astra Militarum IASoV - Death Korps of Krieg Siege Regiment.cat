@@ -146,6 +146,48 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
+    <forceEntry id="4ccb-785f-06ec-c810" name="IA DK Line Infantry Company" hidden="false">
+      <categoryLinks>
+        <categoryLink id="fffb-130c-8925-cc9c" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7af8-2997-88cd-700f" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e93-03a5-3250-3ef7" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="c162-3352-9db3-1595" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d95f-a38a-bb25-65c5" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="606c-15f4-966b-d410" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2a63-259f-95c4-cddc" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e845-2523-8f0c-c02b" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="f1f9-53b6-d466-6e67" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6ee3-305d-d2f9-a8a0" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="e1c2-5bce-905a-7194" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="0453-64f7-78d9-5fe7" name="IA DK Artillery Company" hidden="false">
+      <categoryLinks>
+        <categoryLink id="b764-6898-4072-3710" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26b1-d8d3-685b-005d" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91f3-0530-846f-7ad6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ff87-2a3c-753d-bb02" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="5475-221a-3f87-c246" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="6997712b-ca70-936b-71ed-4877e05f2546" name="Cerastus Knight-Acheron" publicationId="eec64b43--pubd1e498" hidden="false" collective="false" import="true" type="model">
@@ -809,7 +851,8 @@
         <infoLink id="c474dcca-10cf-3762-7af2-9286f108d939" hidden="false" targetId="f7d4be0a-aeb8-6c14-3f2f-d67fc903a2c4" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="09ce2f08-1fbf-286f-f8db-2c48f8eff0d9-5d76b6f5-20ae-4d70-8f59-ade72a2add3a" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="true"/>
+        <categoryLink id="09ce2f08-1fbf-286f-f8db-2c48f8eff0d9-5d76b6f5-20ae-4d70-8f59-ade72a2add3a" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false"/>
+        <categoryLink id="946b-1683-de1f-a726" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="146f-f904-f3ec-f884" name="Watchmaster" page="0" hidden="false" collective="false" import="true" type="model">
@@ -1374,12 +1417,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6a926a1e-6c03-751e-51bc-212fca7dd30e" name="Death Korps Company Command Squad" publicationId="eec64b43--pubd1e1195" page="206" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="8bcf166f-bc37-d52b-19d2-4c678cbd6e66" hidden="false" targetId="8e542ad0-1a9a-b811-077f-eca8bd8fbabc" type="rule"/>
-        <infoLink id="8a711d38-1fd1-bf2e-7f84-0295cec17a13" hidden="false" targetId="f7d4be0a-aeb8-6c14-3f2f-d67fc903a2c4" type="rule"/>
+        <infoLink id="8a711d38-1fd1-bf2e-7f84-0295cec17a13" name="Death Korps" hidden="false" targetId="f7d4be0a-aeb8-6c14-3f2f-d67fc903a2c4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6a926a1e-6c03-751e-51bc-212fca7dd30e-848a6ff2-0def-4c72-8433-ff7da70e6bc7" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
@@ -1725,7 +1765,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="c9105cee-7a71-a2c7-9580-a56e984fced6" name="Veteran Twin-linked Heavy Stubber Team" page="0" hidden="false" collective="false" import="true" type="model">
+                <selectionEntry id="c9105cee-7a71-a2c7-9580-a56e984fced6" name="Twin-linked Heavy Stubber Team" page="0" hidden="false" collective="false" import="true" type="model">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
@@ -1752,7 +1792,7 @@
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="d7286585-5669-0757-1b27-80e0479edea7" name="Veteran Autocannon Team" page="0" hidden="false" collective="false" import="true" type="model">
+                <selectionEntry id="d7286585-5669-0757-1b27-80e0479edea7" name="Autocannon Team" page="0" hidden="false" collective="false" import="true" type="model">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
@@ -1779,7 +1819,7 @@
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ee9a6c24-4d13-fa1a-469d-9b5b7088c24c" name="Veteran Heavy Bolter Team" page="0" hidden="false" collective="false" import="true" type="model">
+                <selectionEntry id="ee9a6c24-4d13-fa1a-469d-9b5b7088c24c" name="Heavy Bolter Team" page="0" hidden="false" collective="false" import="true" type="model">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
@@ -1812,7 +1852,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="0e30e35f-dda4-95e9-b496-2143af4e1e05" hidden="false" collective="false" import="true" targetId="1ef8da1c-de96-4ec4-87c7-0c9da41ec992" type="selectionEntry">
+        <entryLink id="0e30e35f-dda4-95e9-b496-2143af4e1e05" name="Centaur Carrier" hidden="false" collective="false" import="true" targetId="1ef8da1c-de96-4ec4-87c7-0c9da41ec992" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="maxSelections" value="0.0">
               <conditions>
@@ -2003,7 +2043,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="8c44-d6a5-2851-ceb0" hidden="false" collective="false" import="true" targetId="d48e-dac1-6977-881c" type="selectionEntry">
+        <entryLink id="8c44-d6a5-2851-ceb0" name="Death Rider Company Command Squad" hidden="false" collective="false" import="true" targetId="d48e-dac1-6977-881c" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -2020,7 +2060,8 @@
     </selectionEntry>
     <selectionEntry id="82564697-b69a-a5dc-9fb3-d54447f7ce2e" name="Death Korps Field Artillery Battery" publicationId="eec64b43--pubd1e1195" page="213" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="82564697-b69a-a5dc-9fb3-d54447f7ce2e-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+        <categoryLink id="82564697-b69a-a5dc-9fb3-d54447f7ce2e-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false"/>
+        <categoryLink id="27a0-1911-ad0a-bec8" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="2c38-e681-8cda-e13d" name="Field Artillery" page="0" hidden="false" collective="false" import="true" type="model">
@@ -2159,6 +2200,110 @@
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fd8d-88ce-f911-eb09" name="Death Korps Battery Command Squad" publicationId="eec64b43--pubd1e1195" page="214" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eea2-9d95-2cbd-570f" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="0389-3240-4994-30c5" hidden="false" targetId="8e542ad0-1a9a-b811-077f-eca8bd8fbabc" type="rule"/>
+            <infoLink id="1f8e-7611-b017-1b67" name="Death Korps" hidden="false" targetId="f7d4be0a-aeb8-6c14-3f2f-d67fc903a2c4" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="e640-1ab7-de01-511e" name="Battery Commander" page="0" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71b2-33c8-c306-b21d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e51-cb25-5981-d562" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0051-6b80-dc76-5e63" name="Platoon Commander" hidden="false" targetId="b9b18066-85c1-8306-ac5a-853011c29acf" type="profile"/>
+                <infoLink id="3644-35ad-01fe-695a" hidden="false" targetId="e3fdea57-5256-ef54-65b5-d73fea531d72" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="7d8a-148e-8369-c14c" hidden="false" collective="false" import="true" targetId="e569af46-fc7e-ec53-fad3-f7896ea82f3e" type="selectionEntryGroup"/>
+                <entryLink id="49ba-5deb-fcc9-a58c" hidden="false" collective="false" import="true" targetId="bc50bb80-c8be-8d50-4b97-250bb6133347" type="selectionEntryGroup"/>
+                <entryLink id="22cd-c046-3546-eb5f" hidden="false" collective="false" import="true" targetId="833a-db99-005f-1e5f" type="selectionEntry"/>
+                <entryLink id="678e-1510-050c-d9f8" name="Warlord" hidden="false" collective="false" import="true" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" type="selectionEntry"/>
+                <entryLink id="6bb6-0145-f7cb-88c2" hidden="false" collective="false" import="true" targetId="817d1d89-a150-658d-837c-02417b24437b" type="selectionEntry"/>
+                <entryLink id="e28c-1c20-9849-76b7" hidden="false" collective="false" import="true" targetId="e2beb4ff-2117-ad18-eb26-91a10181fc36" type="selectionEntry"/>
+                <entryLink id="4191-ff41-8424-7e96" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f2c773dd-0705-81de-d50f-03d3564e6b41" type="selectionEntry"/>
+                <entryLink id="a380-79ed-aba7-1cfd" name="Flak Armour" hidden="false" collective="false" import="true" targetId="a8ed2377-b403-a5ff-8434-78e162b086c5" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="4610-e2e7-1733-7b24" name="Staff" hidden="false" collective="false" import="true" defaultSelectionEntryId="3b78-cb75-4fb0-59d6">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7620-381a-be8b-28e9" type="min"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ec4-235d-5f60-2ca9" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="ddfc-a845-c310-6ca2" name="Guard w/ Vox Caster" page="0" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e6c6-ff80-c63b-522d" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="11a9-5727-8117-2e4f" hidden="false" targetId="06e7cc4c-1485-7abd-b377-2f455aef823a" type="profile"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink id="517d-57d1-ebb7-4b36" hidden="false" collective="false" import="true" targetId="7a92df87-45d3-df85-751a-5af138476a79" type="selectionEntry"/>
+                    <entryLink id="4bf3-24a4-c354-cfdd" hidden="false" collective="false" import="true" targetId="f2c773dd-0705-81de-d50f-03d3564e6b41" type="selectionEntry"/>
+                    <entryLink id="8dc2-3b21-7b2b-2bff" hidden="false" collective="false" import="true" targetId="e2beb4ff-2117-ad18-eb26-91a10181fc36" type="selectionEntry"/>
+                    <entryLink id="ae67-7cec-4219-ff91" hidden="false" collective="false" import="true" targetId="0b415c15-81b4-5a3f-b0ae-1e460d13a958" type="selectionEntry"/>
+                    <entryLink id="4b28-89f1-8c24-4bdf" hidden="false" collective="false" import="true" targetId="a8ed2377-b403-a5ff-8434-78e162b086c5" type="selectionEntry"/>
+                    <entryLink id="84d0-d707-aeb6-f9e0" hidden="false" collective="false" import="true" targetId="97ae2454-a144-37b1-558b-63373a323053" type="selectionEntry"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fbb5-03e1-6dd6-3b16" name="Guard w/ Platoon Standard" page="0" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="220c-7612-7263-2d2d" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ea03-3d45-835c-3646" hidden="false" targetId="06e7cc4c-1485-7abd-b377-2f455aef823a" type="profile"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink id="1b5b-81db-a8e3-5d1f" hidden="false" collective="false" import="true" targetId="97ae2454-a144-37b1-558b-63373a323053" type="selectionEntry"/>
+                    <entryLink id="07e9-f228-9d5c-16cc" hidden="false" collective="false" import="true" targetId="f2c773dd-0705-81de-d50f-03d3564e6b41" type="selectionEntry"/>
+                    <entryLink id="776e-b6c9-c9ad-a08f" hidden="false" collective="false" import="true" targetId="e2beb4ff-2117-ad18-eb26-91a10181fc36" type="selectionEntry"/>
+                    <entryLink id="ce39-cb3a-8bc3-90a7" hidden="false" collective="false" import="true" targetId="0b415c15-81b4-5a3f-b0ae-1e460d13a958" type="selectionEntry"/>
+                    <entryLink id="fed0-402c-645f-3a3d" hidden="false" collective="false" import="true" targetId="a8ed2377-b403-a5ff-8434-78e162b086c5" type="selectionEntry"/>
+                    <entryLink id="6227-f087-789d-47c3" hidden="false" collective="false" import="true" targetId="f334-3e4e-b005-8213" type="selectionEntry"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3b78-cb75-4fb0-59d6" name="Guardsman" page="0" hidden="false" collective="false" import="true" type="model">
+                  <infoLinks>
+                    <infoLink id="596a-b4f1-fb50-e7c1" hidden="false" targetId="06e7cc4c-1485-7abd-b377-2f455aef823a" type="profile"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink id="dd94-85e8-ac36-47f4" hidden="false" collective="false" import="true" targetId="97ae2454-a144-37b1-558b-63373a323053" type="selectionEntry"/>
+                    <entryLink id="e229-3cbc-b9bf-f296" hidden="false" collective="false" import="true" targetId="f2c773dd-0705-81de-d50f-03d3564e6b41" type="selectionEntry"/>
+                    <entryLink id="2be3-81c6-26aa-5d22" hidden="false" collective="false" import="true" targetId="e2beb4ff-2117-ad18-eb26-91a10181fc36" type="selectionEntry"/>
+                    <entryLink id="c841-40bf-db08-6b9b" hidden="false" collective="false" import="true" targetId="0b415c15-81b4-5a3f-b0ae-1e460d13a958" type="selectionEntry"/>
+                    <entryLink id="de2e-f311-f78c-6912" hidden="false" collective="false" import="true" targetId="a8ed2377-b403-a5ff-8434-78e162b086c5" type="selectionEntry"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="e1e6-8886-f493-1911" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
+            <entryLink id="bc48-b5a0-0d38-ae56" name="Centaur Carrier" hidden="false" collective="false" import="true" targetId="1ef8da1c-de96-4ec4-87c7-0c9da41ec992" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2589,15 +2734,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="0fbee72e-55ee-cbc7-d6ee-60086eafbaa0" hidden="false" collective="false" import="true" targetId="1ef8da1c-de96-4ec4-87c7-0c9da41ec992" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0">
-              <conditions>
-                <condition field="selections" scope="878e10f6-3eb8-42d7-0ebd-b069ad7e6549" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d310d5c2-3ac3-0e3f-3080-e319bcc5d371" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink id="0fbee72e-55ee-cbc7-d6ee-60086eafbaa0" name="Centaur Carrier" hidden="false" collective="false" import="true" targetId="1ef8da1c-de96-4ec4-87c7-0c9da41ec992" type="selectionEntry"/>
         <entryLink id="35b8-ee9b-c551-eb39" name="" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2727,6 +2864,75 @@
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="766b-0cf8-be5b-0f6c" name="Centaur Carrier" publicationId="eec64b43--pubd1e1195" page="217" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="increment" field="e0a7-0601-afaa-6415" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="9f82e51a-f0fd-98a9-156e-6da03be57b9b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b28c-54eb-4631-febe" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b2e4-dcb3-626c-421d" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="9f82e51a-f0fd-98a9-156e-6da03be57b9b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b28c-54eb-4631-febe" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="9f82e51a-f0fd-98a9-156e-6da03be57b9b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="766b-0cf8-be5b-0f6c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b2e4-dcb3-626c-421d" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e0a7-0601-afaa-6415" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5b16-15ef-b6ee-e09c" name="Centaur Carrier" hidden="false" targetId="e55c15b8-728a-180a-6cad-2b32298635ed" type="profile"/>
+            <infoLink id="0448-6470-0a51-10f8" hidden="false" targetId="49db581d-f4cf-5484-7557-33cb73cdeba6" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="2a74-5726-f0ef-39c8" name="Extra Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a012-2684-1117-f942" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="387f-7591-bb05-39ac" hidden="false" targetId="cdda-8935-b495-3a35" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f81e-3868-3f57-a262" name="Dozer Blade" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a74-baaf-dbe5-f111" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4387-b959-c9a8-1232" name="Dozer Blade" hidden="false" targetId="fbed-42ff-591d-13f3" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="efd0-08cf-bd50-c407" name="Camo Netting" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f77-f5cf-c45f-e82c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a2e9-b2c5-3ff2-d5f2" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="001f-a8cd-e7b1-48e4" name="Searchlight" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry"/>
+            <entryLink id="9d5f-5191-303c-43f3" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry"/>
+            <entryLink id="987b-71cb-43b1-2047" hidden="false" collective="false" import="true" targetId="0c1d4564-73a6-082e-a557-5c2426cec7eb" type="selectionEntry"/>
+            <entryLink id="3445-b20a-6e72-3fc6" name="Hunter-killer Missile" hidden="false" collective="false" import="true" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3131,6 +3337,70 @@
                       </entryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="28a7-7206-5aa1-4061" name="Weapons Team" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95d6-f452-aa36-8d36" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="65f5-c411-09c9-d41b" name="Twin-linked Heavy Stubber Team" page="0" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="beba-3ec4-1c19-91ce" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="da3e-0599-db6a-bbca" name="Death Korps Heavy Weapons Team" hidden="false" targetId="afcc52de-b9a0-09ec-4688-643d23373fa3" type="profile"/>
+                        <infoLink id="4378-a3e8-b1cd-4542" hidden="false" targetId="b4c1-e1df-b875-92a6" type="rule"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink id="ae4c-142d-c3e2-12a0" hidden="false" collective="false" import="true" targetId="c38d973d-5a7f-c5ff-979e-1f3c8bac5efc" type="selectionEntry"/>
+                        <entryLink id="a4c8-ecbd-7d97-9f30" hidden="false" collective="false" import="true" targetId="710cdf03-0201-987c-0a70-821b4d94ac35" type="selectionEntry"/>
+                        <entryLink id="f61d-d480-b458-c5cb" name="Krak Grenades T" hidden="false" collective="false" import="true" targetId="4fdb67e0-0544-b154-ceae-595c38ac70ec" type="selectionEntry"/>
+                        <entryLink id="5270-f5f3-9747-3f12" hidden="false" collective="false" import="true" targetId="5d9ff740-b569-9401-30ea-28a7a0428522" type="selectionEntry"/>
+                        <entryLink id="7cd9-bb6c-9a8a-ef1f" hidden="false" collective="false" import="true" targetId="97ae2454-a144-37b1-558b-63373a323053" type="selectionEntry"/>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="b330-25ac-a0e2-4e77" name="Autocannon Team" page="0" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55d7-6d32-d4c7-7065" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="f8bd-7211-0265-1043" name="Death Korps Heavy Weapons Team" hidden="false" targetId="afcc52de-b9a0-09ec-4688-643d23373fa3" type="profile"/>
+                        <infoLink id="1eac-54f1-5471-e954" name="Bulky" hidden="false" targetId="b4c1-e1df-b875-92a6" type="rule"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink id="38ca-b16e-38fb-7eab" hidden="false" collective="false" import="true" targetId="5d21e023-cf12-48a8-ebb4-e295a454625a" type="selectionEntry"/>
+                        <entryLink id="aa60-8db3-ef6e-8ba8" name="Close Combat Weapon T" hidden="false" collective="false" import="true" targetId="710cdf03-0201-987c-0a70-821b4d94ac35" type="selectionEntry"/>
+                        <entryLink id="9474-97a9-0041-16d8" hidden="false" collective="false" import="true" targetId="4fdb67e0-0544-b154-ceae-595c38ac70ec" type="selectionEntry"/>
+                        <entryLink id="e25b-958a-2f59-a1d1" name="Frag Grenades T" hidden="false" collective="false" import="true" targetId="5d9ff740-b569-9401-30ea-28a7a0428522" type="selectionEntry"/>
+                        <entryLink id="4fa7-9854-8e83-1689" hidden="false" collective="false" import="true" targetId="97ae2454-a144-37b1-558b-63373a323053" type="selectionEntry"/>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="0597-0a88-4372-d636" name="Heavy Bolter Team" page="0" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a50-dfb5-9710-fd15" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="132e-20a6-988f-6a09" name="Death Korps Heavy Weapons Team" hidden="false" targetId="afcc52de-b9a0-09ec-4688-643d23373fa3" type="profile"/>
+                        <infoLink id="7561-b87b-4806-168c" hidden="false" targetId="b4c1-e1df-b875-92a6" type="rule"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink id="1955-96db-008f-9418" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="3d0a3f91-213f-1f43-a3d7-4aa85671e2b1" type="selectionEntry"/>
+                        <entryLink id="8e0d-fefc-033f-34fb" hidden="false" collective="false" import="true" targetId="710cdf03-0201-987c-0a70-821b4d94ac35" type="selectionEntry"/>
+                        <entryLink id="564f-b0ef-4111-3130" hidden="false" collective="false" import="true" targetId="4fdb67e0-0544-b154-ceae-595c38ac70ec" type="selectionEntry"/>
+                        <entryLink id="21b9-b62c-2433-8105" hidden="false" collective="false" import="true" targetId="5d9ff740-b569-9401-30ea-28a7a0428522" type="selectionEntry"/>
+                        <entryLink id="94fc-22d6-5773-c8e7" hidden="false" collective="false" import="true" targetId="97ae2454-a144-37b1-558b-63373a323053" type="selectionEntry"/>
+                      </entryLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -5429,6 +5699,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </costs>
     </selectionEntry>
     <selectionEntry id="eab3-d0ab-50fc-0582" name="(Company): Siege Infantry" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4a4a-d23a-2214-ff46" name="Compagnies" hidden="false" targetId="bd01-af93-ab85-86ea" primary="true"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="feaa-9415-ae5f-1fb0" name="Death Korps Infantry Platoon" publicationId="eec64b43--pubd1e1195" page="214" hidden="false" collective="false" import="true" type="unit">
           <constraints>
@@ -6996,6 +7269,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </costs>
     </selectionEntry>
     <selectionEntry id="04db-7466-5523-bd1b" name="(Company): Death Riders Company" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9c85-9dcb-7105-3f20" name="Compagnies" hidden="false" targetId="bd01-af93-ab85-86ea" primary="true"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3c89-fc38-233c-2f90" name="Death Korps Death Rider Platoon" publicationId="eec64b43--pubd1e1195" page="222" hidden="false" collective="false" import="true" type="unit">
           <constraints>
@@ -7313,6 +7589,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </costs>
     </selectionEntry>
     <selectionEntry id="264a-6034-1798-a4d9" name="(Company): Infantry" publicationId="eec64b43--pubd1e1195" page="100" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="dc4d-6bd7-2277-866d" name="Compagnies" hidden="false" targetId="bd01-af93-ab85-86ea" primary="true"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="14db-9c16-fd30-179c" name="Death Korps Infantry Platoon" publicationId="eec64b43--pubd1e1195" page="214" hidden="false" collective="false" import="true" type="unit">
           <constraints>
@@ -8698,7 +8977,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <categoryLink id="3004-760e-5343-518f-848a6ff2-0def-4c72-8433-ff7da70e6bc7" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7983-455f-52f1-1f99" name="New EntryLink" hidden="false" collective="false" import="true" targetId="5a38-3c76-35f2-732d" type="selectionEntry">
+    <entryLink id="7983-455f-52f1-1f99" name="Hydra Flak Platforms" hidden="false" collective="false" import="true" targetId="5a38-3c76-35f2-732d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7983-455f-52f1-1f99-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
@@ -8914,7 +9193,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </constraints>
       <infoLinks>
         <infoLink id="bf68d6a9-83f9-2aeb-1f2d-4ffba0e34ce3" hidden="false" targetId="e55c15b8-728a-180a-6cad-2b32298635ed" type="profile"/>
-        <infoLink id="5d560665-00e7-fd18-4cae-e04f294fbb5c" hidden="false" targetId="49db581d-f4cf-5484-7557-33cb73cdeba6" type="rule"/>
+        <infoLink id="5d560665-00e7-fd18-4cae-e04f294fbb5c" name="Artillery Tractor" hidden="false" targetId="49db581d-f4cf-5484-7557-33cb73cdeba6" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="aaaa-1a98-d653-b611" name="Extra Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -9135,19 +9414,12 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </costs>
     </selectionEntry>
     <selectionEntry id="d48e-dac1-6977-881c" name="Death Rider Company Command Squad" publicationId="eec64b43--pubd1e1195" page="232" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="minInForce" value="1">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1085-b504-c6b4-0a04" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minInForce" type="min"/>
       </constraints>
       <infoLinks>
-        <infoLink id="5faf-9c11-3382-1133" hidden="false" targetId="8e542ad0-1a9a-b811-077f-eca8bd8fbabc" type="rule"/>
+        <infoLink id="5faf-9c11-3382-1133" name="Iron Discipline" hidden="false" targetId="8e542ad0-1a9a-b811-077f-eca8bd8fbabc" type="rule"/>
         <infoLink id="84dc-062d-6b18-0da6" hidden="false" targetId="f7d4be0a-aeb8-6c14-3f2f-d67fc903a2c4" type="rule"/>
         <infoLink id="8e31-2faf-b64a-7c6d" hidden="false" targetId="f6267500-02e3-86f5-836c-fba65c37186f" type="rule"/>
         <infoLink id="b98e-613f-3110-9187" hidden="false" targetId="62261061-3aa2-c238-f139-cb89edac9d06" type="rule"/>
@@ -10805,6 +11077,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </costs>
     </selectionEntry>
     <selectionEntry id="a559-7640-b655-ba87" name="Death Korps Bombard Battery" publicationId="eec64b43--pubd1e1195" page="227" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="39d5-efd1-9871-944b" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="239e-aeb8-096f-39f6" name="Camo Netting for Battery" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -10875,6 +11150,27 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="e7f7-e737-a685-2086" name="Crew" page="0" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d46-3c6a-ba28-6a88" type="min"/>
+                <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="244c-2f48-15a1-5dc6" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b9d6-f830-e7f4-75bf" hidden="false" targetId="8caf-aa6e-5e3d-f10e" type="profile"/>
+                <infoLink id="5a7b-335b-4af6-3f61" hidden="false" targetId="8e542ad0-1a9a-b811-077f-eca8bd8fbabc" type="rule"/>
+                <infoLink id="6fdb-3cf4-b652-926e" hidden="false" targetId="f7d4be0a-aeb8-6c14-3f2f-d67fc903a2c4" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="9529-b7cb-2926-f359" hidden="false" collective="false" import="true" targetId="0b415c15-81b4-5a3f-b0ae-1e460d13a958" type="selectionEntry"/>
+                <entryLink id="65af-3a2b-04a3-5c87" hidden="false" collective="false" import="true" targetId="97ae2454-a144-37b1-558b-63373a323053" type="selectionEntry"/>
+                <entryLink id="7671-8927-4dcd-8aca" hidden="false" collective="false" import="true" targetId="e2beb4ff-2117-ad18-eb26-91a10181fc36" type="selectionEntry"/>
+                <entryLink id="bb8f-5325-b08a-90a2" hidden="false" collective="false" import="true" targetId="f2c773dd-0705-81de-d50f-03d3564e6b41" type="selectionEntry"/>
+                <entryLink id="7232-c17c-cccf-7b13" hidden="false" collective="false" import="true" targetId="a8ed2377-b403-a5ff-8434-78e162b086c5" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="8.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink id="6dcd-8f08-0845-16f4" hidden="false" collective="false" import="true" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
@@ -10884,6 +11180,75 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="140.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1b55-5f21-9234-ed02" name="Centaur Carrier" publicationId="eec64b43--pubd1e1195" page="217" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="increment" field="8b76-a711-c7fe-2740" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="a559-7640-b655-ba87" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f51-71f5-39ed-22d0" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="00d4-b675-06bd-8968" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="a559-7640-b655-ba87" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f51-71f5-39ed-22d0" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="a559-7640-b655-ba87" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1b55-5f21-9234-ed02" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00d4-b675-06bd-8968" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b76-a711-c7fe-2740" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2ff6-e2e1-4e18-1e53" name="Centaur Carrier" hidden="false" targetId="e55c15b8-728a-180a-6cad-2b32298635ed" type="profile"/>
+            <infoLink id="0312-486c-9f67-cb19" hidden="false" targetId="49db581d-f4cf-5484-7557-33cb73cdeba6" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="b811-4cf0-46c6-7a66" name="Extra Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00c5-46a9-240d-4880" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5575-bbb3-7930-6c97" hidden="false" targetId="cdda-8935-b495-3a35" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9e9d-7468-4b8b-e9ef" name="Dozer Blade" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7656-079e-b25c-c863" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7b61-46de-52b3-b3ce" name="Dozer Blade" hidden="false" targetId="fbed-42ff-591d-13f3" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0112-27a6-d509-b5fb" name="Camo Netting" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd44-08d6-f30b-ff26" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5d01-f6f3-1b95-c614" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="a14a-8318-012f-f08f" name="Searchlight" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry"/>
+            <entryLink id="6430-fdb8-8371-bff0" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry"/>
+            <entryLink id="a2f1-4387-b6f7-51a9" hidden="false" collective="false" import="true" targetId="0c1d4564-73a6-082e-a557-5c2426cec7eb" type="selectionEntry"/>
+            <entryLink id="80d4-8f00-b127-9978" name="Hunter-killer Missile" hidden="false" collective="false" import="true" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -13023,7 +13388,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
     <rule id="5317607a-3f17-ac41-76bc-3552cd4db4a2" name="Apocalyptic Barrage" publicationId="eec64b43--pubd1e35592" page="0" hidden="false"/>
     <rule id="f119cda4-ee74-54b4-befa-50a391b20807" name="Armoured Gate" publicationId="eec64b43--pubd1e24933" page="41" hidden="false"/>
     <rule id="7e129f9f-7ace-4d29-45d5-2791e000a4a7" name="Artillery Bombardment" publicationId="eec64b43--pubd1e35536" page="31" hidden="false"/>
-    <rule id="49db581d-f4cf-5484-7557-33cb73cdeba6" name="Artillery Tractor" publicationId="eec64b43--pubd1e1195" page="217" hidden="false"/>
+    <rule id="49db581d-f4cf-5484-7557-33cb73cdeba6" name="Artillery Tractor" publicationId="eec64b43--pubd1e1195" page="217" hidden="false">
+      <description>Quand il tracte une arme lourde, ce véhicule n&apos;est plus considéré comme un véhicule &quot;rapide&quot;. L&apos;arme n&apos;as pas besoin d&apos;être débarqué</description>
+    </rule>
     <rule id="62261061-3aa2-c238-f139-cb89edac9d06" name="Augmented Mounts" publicationId="eec64b43--pubd1e1195" page="223" hidden="false"/>
     <rule id="0a31b24f-a0eb-5320-5252-63f4c38569e9" name="Aura of Discipline" publicationId="eec64b43--pubd1e1195" page="207" hidden="false"/>
     <rule id="1363-ad89-34d2-14ed" name="Auto Targeting" publicationId="eec64b43--pubd1e1195" page="273" hidden="false"/>
