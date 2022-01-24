@@ -4881,19 +4881,8 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="86cb-94da-469b-9491" name="Macharius" publicationId="eec64b43--pubd1e1195" page="229" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="maxInForce" value="0.0">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3328-f8cf-c4ae-a674" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-      </constraints>
       <infoLinks>
-        <infoLink id="6ddd-38c9-e308-4c3f" hidden="false" targetId="b65e581c-9c1f-01c2-2603-f27f5f87305f" type="profile"/>
+        <infoLink id="6ddd-38c9-e308-4c3f" name="Macharius" hidden="false" targetId="b65e581c-9c1f-01c2-2603-f27f5f87305f" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="86cb-94da-469b-9491-c888f08a-6cea-4a01-8126-d374a9231554" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
@@ -8952,7 +8941,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
   </selectionEntries>
   <entryLinks>
     <entryLink id="b2be1e40-e078-7c32-bfbe-a7f9bfc7a870" hidden="false" collective="false" import="true" targetId="9ebe5b10-df6f-fe1c-da1c-0349b025653a" type="selectionEntry"/>
-    <entryLink id="0ff5ee4e-bf5a-fb5c-6e1a-df1a8c26bada" hidden="false" collective="false" import="true" targetId="1040b6f2-5f18-2b34-6a98-dfabfee8ca39" type="selectionEntry"/>
+    <entryLink id="0ff5ee4e-bf5a-fb5c-6e1a-df1a8c26bada" name="Malcador Defender" hidden="false" collective="false" import="true" targetId="1040b6f2-5f18-2b34-6a98-dfabfee8ca39" type="selectionEntry"/>
     <entryLink id="d26c5a6d-0581-f120-84ed-0d8ecf22ec76" hidden="false" collective="false" import="true" targetId="7939f938-dc21-518c-3a83-f56b49ff5946" type="selectionEntry"/>
     <entryLink id="e7832fcc-33a9-c523-03f7-658dbe60ca79" hidden="false" collective="false" import="true" targetId="4d6998bb-d7aa-bad5-a71e-76328077316a" type="selectionEntry"/>
     <entryLink id="4c73f189-5124-6fe7-0409-ec8940ae1f5f" hidden="false" collective="false" import="true" targetId="c3e16a9e-f2d1-d86a-a7f7-d9dbfdd30b8f" type="selectionEntry">
@@ -9416,7 +9405,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
     <selectionEntry id="d48e-dac1-6977-881c" name="Death Rider Company Command Squad" publicationId="eec64b43--pubd1e1195" page="232" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minInForce" type="min"/>
       </constraints>
       <infoLinks>
         <infoLink id="5faf-9c11-3382-1133" name="Iron Discipline" hidden="false" targetId="8e542ad0-1a9a-b811-077f-eca8bd8fbabc" type="rule"/>
@@ -10163,19 +10151,8 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </costs>
     </selectionEntry>
     <selectionEntry id="1040b6f2-5f18-2b34-6a98-dfabfee8ca39" name="Malcador Defender" publicationId="eec64b43--pubd1e24933" page="37" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="maxInForce" value="0.0">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3328-f8cf-c4ae-a674" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-      </constraints>
       <infoLinks>
-        <infoLink id="6b030dda-16dd-53b0-c010-1fa63c97d7df" hidden="false" targetId="1cd1806f-3b3e-a936-39a6-e36450f39efa" type="rule"/>
+        <infoLink id="6b030dda-16dd-53b0-c010-1fa63c97d7df" name="Engine Damage" hidden="false" targetId="1cd1806f-3b3e-a936-39a6-e36450f39efa" type="rule"/>
         <infoLink id="685da149-9484-d1bd-9ac4-80c4e49026aa" hidden="false" targetId="118c91c4-1a78-87e7-0ef0-1bef2eeb1787" type="profile"/>
       </infoLinks>
       <categoryLinks>
