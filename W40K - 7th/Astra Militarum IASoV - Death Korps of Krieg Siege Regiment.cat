@@ -8916,6 +8916,22 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ba55-6dc5-5057-6fbb" name="Salamander Reconnaissance Squadron" publicationId="eec64b43--pubd1e38398" page="200" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="35cd-f5da-ece4-fb59" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5a46-5bf1-6cb7-c632" name="Salamander Scout" hidden="false" collective="false" import="true" targetId="3d43-af54-311b-acf6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="34c0-ac5c-beb3-eff9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a71-82f1-9270-a329" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="b2be1e40-e078-7c32-bfbe-a7f9bfc7a870" hidden="false" collective="false" import="true" targetId="9ebe5b10-df6f-fe1c-da1c-0349b025653a" type="selectionEntry"/>
@@ -12200,6 +12216,38 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3d43-af54-311b-acf6" name="Salamander Scout" publicationId="eec64b43--pubd1e38398" page="200" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="9ec7-34a3-b57d-7d83" name="Salamander Scout" hidden="false" targetId="6025-449c-d68e-c6db" type="profile"/>
+        <infoLink id="3e85-8080-1c68-79f2" name="Scout" hidden="false" targetId="1794-e0e0-bedf-e46b" type="rule"/>
+        <infoLink id="ceed-b2fc-8778-d67a" hidden="false" targetId="c3c24c87-92a7-d6ee-ba91-d2e122d95920" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="0d96-6f8d-2bdb-f49d" name="Pintle-mounted Weapon X" hidden="false" collective="false" import="true" targetId="411c083c-4d9e-7d72-069f-4b897655e970" type="selectionEntryGroup"/>
+        <entryLink id="5616-5562-45a2-d0d9" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry"/>
+        <entryLink id="dea7-a7aa-35f6-2ccd" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry"/>
+        <entryLink id="6d92-4b05-45de-6f93" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="3d0a3f91-213f-1f43-a3d7-4aa85671e2b1" type="selectionEntry"/>
+        <entryLink id="236b-19c8-38b8-be9c" name="Armoured Track Guards" hidden="false" collective="false" import="true" targetId="e6fe-fbd6-f4fa-a3ca" type="selectionEntry"/>
+        <entryLink id="65e9-920a-e917-243a" hidden="false" collective="false" import="true" targetId="a191ea88-dbf1-f24a-aa6b-09377efabced" type="selectionEntryGroup"/>
+        <entryLink id="213d-afab-ee9d-f961" name="Autocannon" hidden="false" collective="false" import="true" targetId="5d21e023-cf12-48a8-ebb4-e295a454625a" type="selectionEntry"/>
+        <entryLink id="4b4c-f9a3-1709-2833" name="Hunter-killer Missile" hidden="false" collective="false" import="true" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+        <entryLink id="7acf-414c-9761-12d5" name="Extra Armour" hidden="false" collective="false" import="true" targetId="8312-0ab4-b720-7bbf" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8312-0ab4-b720-7bbf" name="Extra Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="79ab-e340-f727-c189" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="1df6-ce51-6777-932d" name="Extra Armour" hidden="false" targetId="cdda-8935-b495-3a35" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="dcb15017-c76e-384f-ca1a-b3ce6a1b8c02" name="Aircraft Upgrades" hidden="false" collective="false" import="true">
@@ -15333,6 +15381,16 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
         <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">9</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Super-heavy Walker</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6025-449c-d68e-c6db" name="Salamander Scout" publicationId="eec64b43--pubd1e38398" page="200" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehicle">
+      <characteristics>
+        <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+        <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">12</characteristic>
+        <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">10</characteristic>
+        <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+        <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tank, Fast, Open-topped</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
