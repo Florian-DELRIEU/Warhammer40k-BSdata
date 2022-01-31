@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ca4c-9142-d515-0745" name="Renegades and Heretics (IA13)" revision="2012" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="3050" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ca4c-9142-d515-0745" name="Renegades and Heretics (IA13)" revision="2013" battleScribeVersion="2.03" authorName="Myself" authorUrl="" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="3050" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="ca4c-9142-pubd1e3548" name="Shield of Baal: Leviathan"/>
     <publication id="ca4c-9142-pubd1e4184" name="Imperial Armour 13"/>
@@ -521,7 +521,7 @@
         <categoryLink id="ac7a-b7b6-f6a8-8cc3-abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="59a6-aea1-8e68-fa13" hidden="false" collective="false" import="true" targetId="71c30acd-150f-042d-0a62-640125aa1c8b" type="selectionEntry">
+    <entryLink id="59a6-aea1-8e68-fa13" name="Renegade Tank Squadron" hidden="false" collective="false" import="true" targetId="71c30acd-150f-042d-0a62-640125aa1c8b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="59a6-aea1-8e68-fa13-abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
       </categoryLinks>
@@ -11532,13 +11532,6 @@
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="bbe888d2-8322-1d3b-9ff8-6e70f50d3e29" name="Special Rules" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0">
-              <conditions>
-                <condition field="selections" scope="9886af6f-f0b8-8feb-d92a-1a538ff94089" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43c4164b-5bd8-61a4-d0a8-80a1f0014db8" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -11592,7 +11585,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="a7fc5116-89c6-eba4-c3b5-18b44a10b795" hidden="false" collective="false" import="true" targetId="c38ab16e-45a2-6ce0-085a-20430af8ac73" type="selectionEntry"/>
-        <entryLink id="d43dd9e8-36c0-44ff-0208-b2761a7f9a71" hidden="false" collective="false" import="true" targetId="9ba8d6b8-8700-5d3a-72ec-7f85f484028e" type="selectionEntry"/>
+        <entryLink id="d43dd9e8-36c0-44ff-0208-b2761a7f9a71" name="Fanatic" hidden="false" collective="false" import="true" targetId="9ba8d6b8-8700-5d3a-72ec-7f85f484028e" type="selectionEntry"/>
         <entryLink id="e593-f902-3002-bfff" name="" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -13758,7 +13751,7 @@
             </selectionEntry>
             <selectionEntry id="23e8f56e-5284-4348-b22b-78b6b2544f43" name="Conqueror" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
-                <infoLink id="bf61363b-ba84-f79d-a938-76be13224f0e" hidden="false" targetId="555e8dbd-cf53-0f88-560d-9846e3e602b2" type="profile">
+                <infoLink id="bf61363b-ba84-f79d-a938-76be13224f0e" name="Leman Russ Conqueror" hidden="false" targetId="555e8dbd-cf53-0f88-560d-9846e3e602b2" type="profile">
                   <modifiers>
                     <modifier type="increment" field="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="1">
                       <conditions>
@@ -13775,7 +13768,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="d5f32601-87d2-1774-7226-2b791ba50b62" hidden="false" targetId="8c3dc96e-50d3-a284-24f9-88419d4c7bd0" type="profile"/>
+                    <infoLink id="d5f32601-87d2-1774-7226-2b791ba50b62" name="Conqueror Battle Cannon" hidden="false" targetId="8c3dc96e-50d3-a284-24f9-88419d4c7bd0" type="profile"/>
                   </infoLinks>
                   <selectionEntries>
                     <selectionEntry id="2e906686-2905-c219-231c-c7e6cd8b9e26" name="Storm Bolter" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -13863,7 +13856,7 @@
               <entryLinks>
                 <entryLink id="b33c5ba4-d503-25ad-8777-49f27a975779" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry"/>
                 <entryLink id="fd193e4c-f186-6eef-76d6-c8dcb2469047" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry"/>
-                <entryLink id="d2c63baf-4682-42d1-1df5-551a683259f2" hidden="false" collective="false" import="true" targetId="afa86ef7-3cf8-9573-5d67-90eb0221afec" type="selectionEntryGroup"/>
+                <entryLink id="d2c63baf-4682-42d1-1df5-551a683259f2" name="Leman Russ Upgrades RV" hidden="false" collective="false" import="true" targetId="afa86ef7-3cf8-9573-5d67-90eb0221afec" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="110.0"/>
@@ -18554,7 +18547,7 @@
         <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">13</characteristic>
         <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
         <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">3</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tank, Fast</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tank, Heavy</characteristic>
       </characteristics>
     </profile>
     <profile id="1e02d848-b3b6-5660-0d02-893da47d9c89" name="Leman Russ Demolisher" publicationId="ca4c-9142-pubd1e5324" page="257" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehicle">
