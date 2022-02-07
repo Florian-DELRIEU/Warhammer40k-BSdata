@@ -2117,12 +2117,17 @@
                     <condition field="selections" scope="9c2b656d-ecb2-d6ee-1630-06663e1109a5" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d16ec59c-717e-8aa9-3352-0f93bda7d8b0" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="9c2b656d-ecb2-d6ee-1630-06663e1109a5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a29f321b-c8fb-1732-3826-301cb3ec16eb" type="atLeast"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="02b0dd70-a4ae-1713-12ff-201eb4d8509e" hidden="false" targetId="b68dc361-12b9-499a-fa86-a0131c4a68c0" type="profile"/>
+                <infoLink id="02b0dd70-a4ae-1713-12ff-201eb4d8509e" name="Bastion-breacher Shell" hidden="false" targetId="b68dc361-12b9-499a-fa86-a0131c4a68c0" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
