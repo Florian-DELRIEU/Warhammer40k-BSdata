@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9503-9e14-1988-91a4" name="Imperium - Adeptus Astartes - Raven Guard" revision="39" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="Acebaur" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="183" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9503-9e14-1988-91a4" name="Imperium - Adeptus Astartes - Raven Guard" revision="45" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="Acebaur" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="204" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="cbd4-64ea-2787-3c13" name="Kayvaan Shrike [Legends]" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8bff-f667-c272-a085" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c47c-a3e1-c91e-436a" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ff7-5b3d-301d-41ce" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -115,6 +125,11 @@
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8bff-f667-c272-a085" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="76c0-edb1-bea1-cdb7" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -245,65 +260,6 @@
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="7.0"/>
         <cost name="pts" typeId="points" value="135.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1a48-3e11-a313-b87f" name="Lieutenants" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50e0-fe9c-6ee9-a508" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="0969-29f8-b7a7-b14e" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="e4b4-ec50-fd55-fbb9" name="Up to Two" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d427-08b3-b279-359f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f47e-dda5-0096-0454" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="016a-dc7c-cb9b-b671" name="Lieutenant" hidden="false" collective="false" import="true" targetId="e176-3548-2126-02c8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c84-27d2-a1a5-62dc" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="8d4a-9cab-f7a8-16a5" name="Chapter Relics" hidden="false" collective="false" import="true" targetId="2995-11a2-9ebb-2529" type="selectionEntryGroup"/>
-                <entryLink id="de11-0b98-5528-5e91" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="3e75-d0f4-766e-d0f2" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink id="c231-832d-d6e3-9d38" name="Lieutenant in Phobos Armour" hidden="false" collective="false" import="true" targetId="dacf-c1ae-563f-3632" type="selectionEntry">
-              <entryLinks>
-                <entryLink id="1382-a23e-8101-86aa" name="Chapter Relics" hidden="false" collective="false" import="true" targetId="2995-11a2-9ebb-2529" type="selectionEntryGroup"/>
-                <entryLink id="fa2a-0986-fa8b-4c0d" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="3e75-d0f4-766e-d0f2" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink id="5b4b-5353-a680-b7b1" name="Lieutenant in Reiver Armour" hidden="false" collective="false" import="true" targetId="692c-72aa-bfa3-204f" type="selectionEntry">
-              <entryLinks>
-                <entryLink id="4422-eff5-941f-bc2c" name="Chapter Relics" hidden="false" collective="false" import="true" targetId="2995-11a2-9ebb-2529" type="selectionEntryGroup"/>
-                <entryLink id="ed8b-a953-0b07-2286" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="3e75-d0f4-766e-d0f2" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink id="59d0-045b-6550-5c2c" name="Primaris Lieutenant" hidden="false" collective="false" import="true" targetId="13fa-cbe0-ef6c-a134" type="selectionEntry">
-              <entryLinks>
-                <entryLink id="2aa1-f5c5-d9a6-8037" name="Chapter Relics" hidden="false" collective="false" import="true" targetId="2995-11a2-9ebb-2529" type="selectionEntryGroup"/>
-                <entryLink id="191d-753e-ee26-17b1" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="3e75-d0f4-766e-d0f2" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink id="2f01-e395-7781-35d2" name="Carnac Commodus" hidden="false" collective="false" import="true" targetId="20d6-d50d-6747-a70b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0127-eabd-8462-39fa" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="58ab-af4d-7584-2562" name="Tactical Precision" hidden="false" targetId="ca86-a970-9bab-d29a" type="profile"/>
-                <infoLink id="67ff-da90-fd04-6150" name="Company Heroes" hidden="false" targetId="b6ba-39af-6402-3665" type="profile"/>
-              </infoLinks>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -678,9 +634,13 @@
         <entryLink id="6fa9-e8f3-d670-3ae7" name="Disciplines" hidden="false" collective="false" import="true" targetId="168e-9e38-f042-684a" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
-    <entryLink id="5a12-75f4-e3d6-5690" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="9c15-a12b-ee50-d1b1" type="selectionEntry"/>
+    <entryLink id="5a12-75f4-e3d6-5690" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="9c15-a12b-ee50-d1b1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b880-6d04-2319-8f91" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="1603-32d2-6b28-83d3" name="Mortis Dreadnought [Legends]" hidden="false" collective="false" import="true" targetId="8f67-d315-b9ff-f564" type="selectionEntry"/>
-    <entryLink id="93b8-c1ed-6c46-f7f5" name="New EntryLink" hidden="false" collective="false" import="true" targetId="35a4-8bcc-287a-95aa" type="selectionEntry">
+    <entryLink id="93b8-c1ed-6c46-f7f5" name="Predator Annihilator" hidden="false" collective="false" import="true" targetId="35a4-8bcc-287a-95aa" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c0b3-e60c-85f9-b8fe" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
       </categoryLinks>
@@ -1170,9 +1130,14 @@
     <entryLink id="cf8f-99ba-8383-50ac" name="Company Veterans" hidden="false" collective="false" import="true" targetId="339f-3bb9-0c10-034b" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8352-7f67-7e2b-3b4f" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8352-7f67-7e2b-3b4f" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ad3-0320-2839-8582" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="increment" field="c811-394d-3828-bef7" value="1.0">
           <repeats>
@@ -1222,10 +1187,104 @@
         <categoryLink id="8b53-2087-3a55-96d2" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ba13-8935-1b9c-4856" name="Ephrael Stern and Kyganil of the Bloody Tears" hidden="false" collective="false" import="true" targetId="7dca-e055-7a15-4bf3" type="selectionEntry">
+    <entryLink id="5acc-a6f5-82ac-c175" name="Unit Filter" hidden="false" collective="false" import="true" targetId="b3e2-b980-851c-3a50" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="c27f-7e13-9e97-b691" name="New CategoryLink" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
+        <categoryLink id="665a-7de3-cd9b-080a" name="New CategoryLink" hidden="false" targetId="fcff-0f21-93e6-1ddc" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="647c-e0fa-d8a2-b9c3" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="9c15-a12b-ee50-d1b1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5912-3f43-75c1-f85c" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfd-70c4-fce9-b2ea" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab51-c3f2-9c5a-ecd2" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002e-7c43-59e8-3496" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f1-772c-0091-a1a8" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28af-fce8-2f9c-0145" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f67-d315-b9ff-f564" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2149-8a56-0274-5e59" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c42a-7105-cd0c-eb7c" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af08-3f9b-20d1-6875" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e7e-7604-a530-e270" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="956e-6289-1c5d-5601" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddfd-70c4-fce9-b2ea" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2149-8a56-0274-5e59" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="002e-7c43-59e8-3496" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f67-d315-b9ff-f564" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5912-3f43-75c1-f85c" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2149-8a56-0274-5e59" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28af-fce8-2f9c-0145" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f1-772c-0091-a1a8" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab51-c3f2-9c5a-ecd2" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e7e-7604-a530-e270" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="956e-6289-1c5d-5601" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ab31-4a1e-91dd-7d23" name="New CategoryLink" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="145b-f0b3-52d3-885e" name="Carnac Commodus" hidden="false" collective="false" import="true" targetId="20d6-d50d-6747-a70b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12b7-9002-3608-90a5" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="5541-8fbf-a4bc-2fa5" name="Tactical Precision" hidden="false" targetId="ca86-a970-9bab-d29a" type="profile"/>
+        <infoLink id="c844-cd26-c0cd-bc8e" name="Company Heroes" hidden="false" targetId="b6ba-39af-6402-3665" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9911-f46a-abb5-823c" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="45f9-8123-dd2b-96ab" name="Lieutenant" hidden="false" collective="false" import="true" targetId="e176-3548-2126-02c8" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5791-4bf9-91d5-64c1" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5334-3144-6c1d-3256" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="780f-5086-90a0-7e96" name="Chapter Relics" hidden="false" collective="false" import="true" targetId="2995-11a2-9ebb-2529" type="selectionEntryGroup"/>
+        <entryLink id="b857-06bc-5706-0a8e" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="3e75-d0f4-766e-d0f2" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="5fcb-cb9e-1d6d-d39a" name="Lieutenant in Phobos Armour" hidden="false" collective="false" import="true" targetId="dacf-c1ae-563f-3632" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7410-ef6e-5c44-1bbc" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ec2c-ac1b-e2b8-3eff" name="Chapter Relics" hidden="false" collective="false" import="true" targetId="2995-11a2-9ebb-2529" type="selectionEntryGroup"/>
+        <entryLink id="6968-19d3-c17f-2232" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="3e75-d0f4-766e-d0f2" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="3648-ab63-83a7-170e" name="Lieutenant in Reiver Armour" hidden="false" collective="false" import="true" targetId="692c-72aa-bfa3-204f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="eaef-0f45-60ff-9149" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d7dd-679c-a6fa-a49b" name="Chapter Relics" hidden="false" collective="false" import="true" targetId="2995-11a2-9ebb-2529" type="selectionEntryGroup"/>
+        <entryLink id="db7b-721a-4aa9-7c7d" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="3e75-d0f4-766e-d0f2" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="0854-f274-2fe6-c555" name="Primaris Lieutenant" hidden="false" collective="false" import="true" targetId="13fa-cbe0-ef6c-a134" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="aadc-ed09-cb02-1f5e" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4e1d-53f4-900d-110e" name="Chapter Relics" hidden="false" collective="false" import="true" targetId="2995-11a2-9ebb-2529" type="selectionEntryGroup"/>
+        <entryLink id="30c0-3c7c-d663-177e" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="3e75-d0f4-766e-d0f2" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -1262,7 +1321,7 @@
               <rules>
                 <rule id="f45e-1989-a043-68f8" name="Shadow Masters" hidden="false">
                   <description>- Each time a ranged attack is made against a unit with this tactic, if the attacker is more than 18&quot; away, then the unit with this tactic is treated as having the benefits of light cover against that attack.
-- Each time a ranged attack is made against an INFANTRY unit with this tactic that is entrirely on or within a terrain feature, if the attacker is more than 18&quot; away, then the unit with this tactic is treated as having the benefits of dense cover against that attack.</description>
+- Each time a ranged attack is made against an INFANTRY unit with this tactic that is entrirely on or within a terrain feature, if the attacker is more than 12&quot; away, then the unit with this tactic is treated as having the benefits of dense cover against that attack.</description>
                 </rule>
               </rules>
               <costs>
@@ -1318,9 +1377,14 @@
         <entryLink id="abb3-7602-48a2-b050" name="Tactics" hidden="false" collective="false" import="true" targetId="a7a4-4d2d-81c8-5bd1" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="0753-6b9c-4175-0023" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="deaf-7729-b64c-bfff" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="0753-6b9c-4175-0023" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3700-470e-f75d-6cba" type="equalTo"/>
+                    <condition field="selections" scope="0753-6b9c-4175-0023" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="deaf-7729-b64c-bfff" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>

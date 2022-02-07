@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="422a-a40e-3f7c-e8b3" name="Chaos - Daemons" revision="101" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@Mad_Spy" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="182" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="422a-a40e-3f7c-e8b3" name="Chaos - Daemons" revision="110" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@Mad_Spy" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="205" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="422a-a40e-pubN71142" name="Dataslate: Be&apos;lakor"/>
   </publications>
@@ -62,7 +62,6 @@
     <categoryEntry id="4ad0-7149-cdc4-7426" name="Herald of Slaanesh" hidden="false"/>
     <categoryEntry id="6988-9a68-df7e-5c0f" name="Herald of Tzeentch" hidden="false"/>
     <categoryEntry id="f98e-1da1-7cce-ac21" name="Great Unclean One" hidden="false"/>
-    <categoryEntry id="761d-8f06-b39f-4bc7" name="Daemon Prince" hidden="false"/>
     <categoryEntry id="53c3-b2cf-1554-c3da" name="Exalted Flamer" hidden="false"/>
     <categoryEntry id="4876-2cad-c1ff-7024" name="Infernal Enrapturess" hidden="false"/>
     <categoryEntry id="6d70-db49-2b8f-c427" name="Beasts of Nurgle" hidden="false"/>
@@ -75,6 +74,7 @@
     <categoryEntry id="4c20-1265-a52e-5fcb" name="Slaanesh Warlord" hidden="false"/>
     <categoryEntry id="75ed-ff4a-c0a3-551a" name="Tzeentch Warlord" hidden="false"/>
     <categoryEntry id="1770-3b49-aea2-f585" name="Giant Chaos Spawn" hidden="false"/>
+    <categoryEntry id="edf3-0b1b-b8a2-f208" name="Daemon Prince of Chaos" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="8466-813b-f8f0-e78f" name="Karanak" hidden="false" collective="false" import="true" targetId="b91e-a5fc-d9d4-bf08" type="selectionEntry">
@@ -90,6 +90,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink id="fcee-db0a-e790-4a4a" name="Skarbrand" hidden="false" collective="false" import="true" targetId="e0dc-e385-fd96-6a19" type="selectionEntry">
@@ -101,6 +106,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a74-3874-4059-d979" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21b1-7fd4-e8d8-b28d" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b65b-0d90-94ce-ffad" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -120,6 +126,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink id="bfa2-a2d4-ad79-6fbf" name="Bloodthirster of Insensate Rage" hidden="false" collective="false" import="true" targetId="b2cf-78a5-510c-f24b" type="selectionEntry">
@@ -131,6 +142,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a74-3874-4059-d979" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21b1-7fd4-e8d8-b28d" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b65b-0d90-94ce-ffad" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -146,6 +158,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a74-3874-4059-d979" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21b1-7fd4-e8d8-b28d" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b65b-0d90-94ce-ffad" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -161,6 +174,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a74-3874-4059-d979" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21b1-7fd4-e8d8-b28d" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b65b-0d90-94ce-ffad" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -212,16 +226,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="1a1c-1cb1-2e56-a07a" name="New EntryLink" hidden="false" collective="false" import="true" targetId="253a-9e51-cf96-b0d5" type="selectionEntry"/>
-    <entryLink id="270a-1642-befe-9c32" name="Be&apos;lakor" hidden="false" collective="false" import="true" targetId="38ee-583c-b397-a057" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f366-0842-dce1-6bc8" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
+    <entryLink id="1a1c-1cb1-2e56-a07a" name="Daemon Prince of Chaos" hidden="false" collective="false" import="true" targetId="253a-9e51-cf96-b0d5" type="selectionEntry"/>
     <entryLink id="fcaa-1c21-8fc8-2355" name="Bloodletters" hidden="false" collective="false" import="true" targetId="2372-6e48-e202-af38" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -295,6 +300,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink id="fcdb-0c43-cabe-b16b" name="Kairos Fateweaver" hidden="false" collective="false" import="true" targetId="491d-77f0-b95a-1fc7" type="selectionEntry">
@@ -306,6 +316,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-a750-7057-082f" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a74-3874-4059-d979" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21b1-7fd4-e8d8-b28d" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -324,6 +335,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
         </modifier>
       </modifiers>
     </entryLink>
@@ -396,6 +412,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-a750-7057-082f" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a74-3874-4059-d979" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21b1-7fd4-e8d8-b28d" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -471,6 +488,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-a750-7057-082f" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21b1-7fd4-e8d8-b28d" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b65b-0d90-94ce-ffad" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -550,6 +568,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink id="b3c7-4b66-8b03-4f54" name="Keeper of Secrets" hidden="false" collective="false" import="true" targetId="884c-e873-9376-9f6f" type="selectionEntry">
@@ -561,6 +584,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-a750-7057-082f" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a74-3874-4059-d979" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b65b-0d90-94ce-ffad" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -639,6 +663,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
         </modifier>
       </modifiers>
     </entryLink>
@@ -757,6 +786,7 @@
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-a750-7057-082f" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a74-3874-4059-d979" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21b1-7fd4-e8d8-b28d" type="equalTo"/>
               </conditions>
             </conditionGroup>
@@ -788,13 +818,14 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-a750-7057-082f" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a74-3874-4059-d979" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b65b-0d90-94ce-ffad" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="d9a2-108d-2cd5-44f0" name="Samus" hidden="false" collective="false" import="true" targetId="f9f2-faf7-822d-ccbc" type="selectionEntry">
+    <entryLink id="d9a2-108d-2cd5-44f0" name="Samus [LEGENDS]" hidden="false" collective="false" import="true" targetId="f9f2-faf7-822d-ccbc" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -806,6 +837,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
         </modifier>
       </modifiers>
     </entryLink>
@@ -822,6 +858,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink id="8512-3ba9-a3ab-f335" name="Mamon Transfigured" hidden="false" collective="false" import="true" targetId="b36b-da1c-afe1-29fc" type="selectionEntry">
@@ -836,6 +877,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
         </modifier>
       </modifiers>
     </entryLink>
@@ -867,6 +913,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink id="a577-c3db-9b7a-bf67" name="Pox Riders of Nurgle" hidden="false" collective="false" import="true" targetId="1bcb-ab63-2d0a-fb4f" type="selectionEntry">
@@ -895,6 +946,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-a750-7057-082f" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21b1-7fd4-e8d8-b28d" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b65b-0d90-94ce-ffad" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -910,6 +962,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-a750-7057-082f" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21b1-7fd4-e8d8-b28d" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b65b-0d90-94ce-ffad" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -929,6 +982,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink id="5648-a873-9743-0508" name="Sloppity Bilepiper" hidden="false" collective="false" import="true" targetId="b61b-7759-0e36-7680" type="selectionEntry">
@@ -943,6 +1001,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
         </modifier>
       </modifiers>
     </entryLink>
@@ -1016,7 +1079,7 @@
     <entryLink id="2251-e59d-49dd-61a8" name="Specialist Detachment" hidden="false" collective="false" import="true" targetId="af01-5f57-2c7b-1e27" type="selectionEntry"/>
     <entryLink id="28ed-ee24-fd9c-d6b1" name="Field Commander" hidden="false" collective="false" import="true" targetId="75e8-c335-85e3-77ea" type="selectionEntry"/>
     <entryLink id="cc55-88a0-e50b-d95b" name="Skull Altar" hidden="false" collective="false" import="true" targetId="bc1f-c1df-5fe8-3cc8" type="selectionEntry"/>
-    <entryLink id="1695-1ee6-9429-e98a" name="Syll&apos;Esske" hidden="false" collective="false" import="true" targetId="969b-f909-e50c-8d0b" type="selectionEntry">
+    <entryLink id="1695-1ee6-9429-e98a" name="Syll&apos;Esske, the Vengeful Allegiance" hidden="false" collective="false" import="true" targetId="969b-f909-e50c-8d0b" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -1029,6 +1092,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink id="f1bc-0fe3-31f6-3173" name="Shalaxi Helbane" hidden="false" collective="false" import="true" targetId="3252-75c4-922f-98e9" type="selectionEntry">
@@ -1040,6 +1108,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-a750-7057-082f" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a74-3874-4059-d979" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b65b-0d90-94ce-ffad" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1076,131 +1145,35 @@
         </modifier>
       </modifiers>
     </entryLink>
-  </entryLinks>
-  <sharedSelectionEntries>
-    <selectionEntry id="38ee-583c-b397-a057" name="Be&apos;lakor" publicationId="422a-a40e-pubN71142" page="0" hidden="false" collective="false" import="true" type="model">
+    <entryLink id="c327-d205-338f-f358" name="Be&apos;lakor" hidden="false" collective="false" import="true" targetId="c93a-b1ce-64a2-9caf" type="selectionEntry"/>
+    <entryLink id="6d0e-cc6a-49a1-0651" name="Army of Renown - Disciples of Be&apos;lakor" hidden="false" collective="false" import="true" targetId="88b1-c697-e840-2850" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="ded9-5cf0-52d3-d82a" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88b1-c697-e840-2850" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9162-55b1-a567-a0d4" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ded9-5cf0-52d3-d82a" type="min"/>
       </constraints>
       <profiles>
-        <profile id="f402-ba6f-20dc-1aa7" name="Be&apos;lakor" page="" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="a61c-cb3f-1d84-f134" name="Locus of Shadows (Aura)" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">8</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6cf9-6f1a-cc60-0d89" name="Lord of Torment" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Subtract 1 from the Leadership of enemy units that are within 12&quot; of Be&apos;lakor in the Morale phase.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="be99-ab29-a841-80d3" name="Prince of Chaos" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can re-roll any failed hit rolls of 1 made for friendly DAEMON units within 6&quot; of Be&apos;lakor.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3d54-627c-e8ba-a698" name="Shadow Form" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can re-roll failed saving throws for Be&apos;lakor.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c927-cdd8-b881-8443" name="Be&apos;lakor" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
-          <characteristics>
-            <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">2</characteristic>
-            <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">1</characteristic>
-            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite and 2 powers from the Dark Hereticus discipline</characteristic>
-            <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">DAEMONIC DISCIPLES CHARACTERS in a DISCIPLES OF BE&apos;LAKOR Army have the following ability:
+Locus of Shadows (Aura) - While a friendly DAEMONIC DISCIPLES unit is within 6&quot; of this model, each time a ranged attack is made against that unit:
+- Your opponent cannot re-roll the hit roll.
+- If the attacker is more than 12&quot; away, subtract 1 from the that attack&apos;s hit roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="34f4-a82d-e907-a6e3" name="Daemonic" hidden="false" targetId="7ebf-19a7-1108-215c" type="profile"/>
-      </infoLinks>
       <categoryLinks>
-        <categoryLink id="43c9-550d-4d4f-99d5" name="New CategoryLink" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
-        <categoryLink id="25c3-5f44-60ea-9dae" name="New CategoryLink" hidden="false" targetId="0bc5-6451-5612-4a25" primary="false"/>
-        <categoryLink id="4e6c-88d7-d8ca-1f5d" name="New CategoryLink" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false"/>
-        <categoryLink id="3f31-c65d-1659-2957" name="New CategoryLink" hidden="false" targetId="3b77-decb-d468-6bcc" primary="false"/>
-        <categoryLink id="258d-2c4a-5c2a-28b6" name="New CategoryLink" hidden="false" targetId="e691-aad7-d21c-1023" primary="false"/>
-        <categoryLink id="8058-6112-b53f-e202" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
-        <categoryLink id="2b4d-1127-5784-1a64" name="New CategoryLink" hidden="false" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
-        <categoryLink id="c668-fd96-7c7c-b2e3" name="New CategoryLink" hidden="false" targetId="761d-8f06-b39f-4bc7" primary="false"/>
+        <categoryLink id="8042-4367-2bdc-aa48" name="Configuration" hidden="false" targetId="fcff-0f21-93e6-1ddc" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5265-8c12-eb39-1367" name="The Blade of Shadows" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad16-4ac8-b0e2-d311" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97e2-69d3-0416-256c" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="16df-e7b2-098e-0ffe" name="The Blade of Shadows" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-5</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="342a-567a-725a-6740" name="Warlord Traits" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="38ee-583c-b397-a057" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c488-0afe-c67e-2606" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f99-aa3f-0af6-5225" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ccbe-7530-9b0d-c5a7" name="Warlord Traits (BRB)" hidden="false" collective="false" import="true" targetId="d442-1f03-d9da-e77f" type="selectionEntryGroup"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="329d-6b67-3910-947b" name="Malefic talon" hidden="false" collective="false" import="true" targetId="6d39-3639-2a3d-38f6" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a52-4363-f6ac-9e49" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dba8-ecb4-544f-7af8" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ff63-5a3a-dbf2-9858" name="Dark Hereticus discipline" hidden="false" collective="false" import="true" targetId="4444-7dd9-84f4-837e" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="208c-0f14-2a83-4f8e" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ab07-1bab-ed32-2c23" name="Smite" hidden="false" collective="false" import="true" targetId="03fd-db47-5333-1e1f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef1d-cbfc-6527-2244" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2463-0e93-1164-48d5" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="5228-e613-d9ec-4f13" name="Warlord" hidden="false" collective="false" import="true" targetId="c488-0afe-c67e-2606" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="220.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="11.0"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-      </costs>
-    </selectionEntry>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
     <selectionEntry id="5bba-6f5d-fa59-220a" name="Blood Throne" page="0" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="1eb5-6a11-edc9-adfc" name="Blood Throne" page="" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
@@ -1318,23 +1291,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c703-ebae-c615-1221" name="Bloodcrushers" page="0" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="6.0">
-          <conditions>
-            <condition field="selections" scope="c703-ebae-c615-1221" value="9.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="6.0">
-          <conditions>
-            <condition field="selections" scope="c703-ebae-c615-1221" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="6.0">
-          <conditions>
-            <condition field="selections" scope="c703-ebae-c615-1221" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink id="5189-f758-b6c7-de92" name="Unstoppable Ferocity" hidden="false" targetId="ea78-399f-19c0-53fa" type="profile"/>
         <infoLink id="4c99-6e56-3e69-ae00" name="Daemonic Ritual" hidden="false" targetId="224f-2c86-454d-54aa" type="rule"/>
@@ -1381,7 +1337,7 @@
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ebce-24d3-a64d-c1f0" name="Bloodhunter" hidden="false" collective="false" import="true" type="model">
@@ -1416,7 +1372,7 @@
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1469,7 +1425,6 @@
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="6.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2372-6e48-e202-af38" name="Bloodletters" page="0" hidden="false" collective="false" import="true" type="unit">
@@ -1749,7 +1704,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="240.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="14.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="12.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1798,18 +1753,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d290-d629-dd28-7a2f" name="Flamers" page="0" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="3.0">
-          <repeats>
-            <repeat field="selections" scope="d290-d629-dd28-7a2f" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="true"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" field="e356-c769-5920-6e14" value="3.0">
-          <conditions>
-            <condition field="selections" scope="d290-d629-dd28-7a2f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink id="eebe-edc7-b9e6-5b26" name="Daemonic" hidden="false" targetId="7ebf-19a7-1108-215c" type="profile"/>
         <infoLink id="f936-cec0-4ed1-14a4" name="Daemonic Ritual" hidden="false" targetId="224f-2c86-454d-54aa" type="rule"/>
@@ -1849,8 +1792,8 @@
             <entryLink id="5c43-91cd-ed50-276a" name="Flickering flames" hidden="false" collective="false" import="true" targetId="7a65-1949-c996-8da6" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="23.0"/>
-            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="1.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -1878,8 +1821,8 @@
             <entryLink id="faa4-fe98-25db-bb66" name="Flickering flames" hidden="false" collective="false" import="true" targetId="7a65-1949-c996-8da6" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="23.0"/>
-            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="1.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -1890,7 +1833,6 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1987,7 +1929,7 @@
           </selectionEntries>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-            <cost name="pts" typeId="points" value="18.0"/>
+            <cost name="pts" typeId="points" value="16.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -2066,14 +2008,14 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="28.0"/>
+            <cost name="pts" typeId="points" value="26.0"/>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="3925-7d19-3bc9-6970" name="Has Battle Honours" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
+        <entryLink id="3925-7d19-3bc9-6970" name="Has Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
         <entryLink id="9e76-0425-1737-ea7e" name="Battle Honours" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2578,8 +2520,8 @@
         <entryLink id="e57e-3e9b-aa47-fbe2" name="Custom Character Selections (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="270.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="14.0"/>
+        <cost name="pts" typeId="points" value="300.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="16.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2668,7 +2610,7 @@
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="22.0"/>
+            <cost name="pts" typeId="points" value="25.0"/>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
@@ -2729,12 +2671,12 @@
     </selectionEntry>
     <selectionEntry id="039e-81fd-d6ad-d181" name="Screamers" page="0" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="3.0">
+        <modifier type="increment" field="e356-c769-5920-6e14" value="4.0">
           <repeats>
             <repeat field="selections" scope="039e-81fd-d6ad-d181" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="true"/>
           </repeats>
         </modifier>
-        <modifier type="decrement" field="e356-c769-5920-6e14" value="3.0">
+        <modifier type="decrement" field="e356-c769-5920-6e14" value="4.0">
           <conditions>
             <condition field="selections" scope="039e-81fd-d6ad-d181" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
@@ -2814,7 +2756,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="4.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -3291,8 +3233,8 @@
         <entryLink id="4bda-ecae-2fda-1f35" name="Exalted Bloodthirster" hidden="false" collective="false" import="true" targetId="f6c3-133b-d804-f08c" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="250.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="13.0"/>
+        <cost name="pts" typeId="points" value="240.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="12.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4086,6 +4028,26 @@
                 <condition field="selections" scope="896d-c258-d030-1a02" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605f-a914-4165-daaf" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="0083-7eed-fae0-2640" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+                    <condition field="selections" scope="896d-c258-d030-1a02" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605f-a914-4165-daaf" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="0083-7eed-fae0-2640" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+                    <condition field="selections" scope="896d-c258-d030-1a02" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605f-a914-4165-daaf" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0083-7eed-fae0-2640" type="max"/>
@@ -4117,6 +4079,23 @@
         </entryLink>
         <entryLink id="c53a-f558-547a-9d71" name="Is a Custom Character" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
         <entryLink id="7737-becc-7f4b-acc0" name="Custom Character Selections" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
+        <entryLink id="de69-a0e1-4d2c-f9b3" name="Noctic Discipline" hidden="false" collective="false" import="true" targetId="ff95-3e69-8fd3-2c86" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="c91e-63e0-2292-3f6c" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cf2-ae18-9576-c59b" type="greaterThan"/>
+                    <condition field="selections" scope="896d-c258-d030-1a02" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605f-a914-4165-daaf" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c91e-63e0-2292-3f6c" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="85.0"/>
@@ -4214,6 +4193,26 @@
                 <condition field="selections" scope="b8e4-e229-b807-234c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605f-a914-4165-daaf" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="1861-063c-ff8e-036e" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+                    <condition field="selections" scope="b8e4-e229-b807-234c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605f-a914-4165-daaf" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="1861-063c-ff8e-036e" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+                    <condition field="selections" scope="b8e4-e229-b807-234c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605f-a914-4165-daaf" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1861-063c-ff8e-036e" type="max"/>
@@ -4245,6 +4244,23 @@
         </entryLink>
         <entryLink id="ce48-236e-02d4-0242" name="Is a Custom Character" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
         <entryLink id="5770-02ab-4221-48a7" name="Custom Character Selections" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
+        <entryLink id="f85a-a36b-96e8-04da" name="Noctic Discipline" hidden="false" collective="false" import="true" targetId="ff95-3e69-8fd3-2c86" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="fdcd-afe6-6dd7-c1e9" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cf2-ae18-9576-c59b" type="greaterThan"/>
+                    <condition field="selections" scope="b8e4-e229-b807-234c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605f-a914-4165-daaf" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdcd-afe6-6dd7-c1e9" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="105.0"/>
@@ -4355,6 +4371,26 @@
                 <condition field="selections" scope="a701-df33-f613-4363" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605f-a914-4165-daaf" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="1789-4865-60b1-fe5c" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+                    <condition field="selections" scope="a701-df33-f613-4363" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605f-a914-4165-daaf" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="1789-4865-60b1-fe5c" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+                    <condition field="selections" scope="a701-df33-f613-4363" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605f-a914-4165-daaf" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1789-4865-60b1-fe5c" type="max"/>
@@ -4380,6 +4416,23 @@
         </entryLink>
         <entryLink id="61fb-94a1-aee5-807b" name="Is a Custom Character" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
         <entryLink id="1e62-fdfc-9459-e14b" name="Custom Character Selections" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
+        <entryLink id="b0be-f243-465f-acef" name="Noctic Discipline" hidden="false" collective="false" import="true" targetId="ff95-3e69-8fd3-2c86" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="cfc0-c91a-03ba-ce72" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cf2-ae18-9576-c59b" type="greaterThan"/>
+                    <condition field="selections" scope="a701-df33-f613-4363" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="605f-a914-4165-daaf" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfc0-c91a-03ba-ce72" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="160.0"/>
@@ -4969,6 +5022,13 @@ Matched Play: Models added to this unit using the Split ability must be paid for
           </constraints>
         </entryLink>
         <entryLink id="8575-b623-d7a7-45de" name="Nurgle Discipline" hidden="false" collective="false" import="true" targetId="c7bb-3d6d-b7b1-6822" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="98f7-4f83-ca1c-69a6" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98f7-4f83-ca1c-69a6" type="max"/>
           </constraints>
@@ -4987,7 +5047,19 @@ Matched Play: Models added to this unit using the Split ability must be paid for
           </constraints>
         </entryLink>
         <entryLink id="81fa-02ef-4799-14b0" name="Is a Custom Character" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
-        <entryLink id="277f-53ea-ee35-0a72" name="Custom Character Selections" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
+        <entryLink id="277f-53ea-ee35-0a72" name="Custom Character Selections (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
+        <entryLink id="bfc5-3821-06c5-665c" name="Noctic Discipline" hidden="false" collective="false" import="true" targetId="ff95-3e69-8fd3-2c86" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="69a0-01a9-1097-eb66" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c7bb-3d6d-b7b1-6822" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69a0-01a9-1097-eb66" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="75.0"/>
@@ -5360,7 +5432,7 @@ Matched Play: Models added to this unit using the Split ability must be paid for
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="240.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="14.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="13.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -6278,6 +6350,13 @@ Matched Play: Models added to this unit using the Split ability must be paid for
           </constraints>
         </entryLink>
         <entryLink id="38f1-c5b6-e68e-2d05" name="Slaanesh Discipline" hidden="false" collective="false" import="true" targetId="61c2-467c-8620-2a1c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="7968-3da8-717c-986f" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7968-3da8-717c-986f" type="max"/>
           </constraints>
@@ -6292,6 +6371,18 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <entryLink id="c0f5-b061-c37d-44a9" name="Is a Custom Character" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
         <entryLink id="6074-a621-3033-e5c3" name="Custom Character Selections" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
         <entryLink id="af49-7e9b-b1c4-ae1b" name="Ravaging claws" hidden="false" collective="false" import="true" targetId="8202-aed0-c317-6ce9" type="selectionEntry"/>
+        <entryLink id="47ed-1352-4bf4-5c0d" name="Noctic Discipline" hidden="false" collective="false" import="true" targetId="ff95-3e69-8fd3-2c86" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="087f-6772-488e-98ec" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="61c2-467c-8620-2a1c" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="087f-6772-488e-98ec" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="55.0"/>
@@ -6353,6 +6444,13 @@ Matched Play: Models added to this unit using the Split ability must be paid for
           </constraints>
         </entryLink>
         <entryLink id="aab7-bdb1-8a00-9767" name="Slaanesh Discipline" hidden="false" collective="false" import="true" targetId="61c2-467c-8620-2a1c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="07e9-cefb-ec1a-7d7f" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07e9-cefb-ec1a-7d7f" type="max"/>
           </constraints>
@@ -6365,8 +6463,20 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         </entryLink>
         <entryLink id="85fd-183b-d468-3301" name="Hellforged Artefacts" hidden="false" collective="false" import="true" targetId="c4c5-0f49-b602-2d74" type="selectionEntryGroup"/>
         <entryLink id="2458-3585-28ab-845c" name="Warlord Traits (Slaanesh)" hidden="false" collective="false" import="true" targetId="a671-d25a-4ef4-3e5d" type="selectionEntryGroup"/>
-        <entryLink id="e23d-f756-1cfb-a4a5" name="Is a Custom Character" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
+        <entryLink id="e23d-f756-1cfb-a4a5" name="Is a Custom Character (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
         <entryLink id="b09a-965a-0a4a-e42e" name="Custom Character Selections" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
+        <entryLink id="5a22-84e3-5b5b-5c56" name="Noctic Discipline" hidden="false" collective="false" import="true" targetId="ff95-3e69-8fd3-2c86" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="ae63-7ba3-2ad1-438e" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="61c2-467c-8620-2a1c" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae63-7ba3-2ad1-438e" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="82.0"/>
@@ -6448,6 +6558,13 @@ Matched Play: Models added to this unit using the Split ability must be paid for
       </selectionEntries>
       <entryLinks>
         <entryLink id="de4d-71b6-f35a-4650" name="Slaanesh Discipline" hidden="false" collective="false" import="true" targetId="61c2-467c-8620-2a1c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="4621-8706-aeb6-3c7b" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4621-8706-aeb6-3c7b" type="max"/>
           </constraints>
@@ -6478,6 +6595,18 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <entryLink id="8b1f-1386-e6df-3956" name="Warlord Traits (Slaanesh)" hidden="false" collective="false" import="true" targetId="a671-d25a-4ef4-3e5d" type="selectionEntryGroup"/>
         <entryLink id="0e07-ac3f-56e0-8334" name="Is a Custom Character" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
         <entryLink id="265d-3bb8-f45c-e55a" name="Custom Character Selections" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
+        <entryLink id="171b-58a3-d29c-c711" name="Noctic Discipline" hidden="false" collective="false" import="true" targetId="ff95-3e69-8fd3-2c86" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="2d35-11a2-1943-7dd4" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="61c2-467c-8620-2a1c" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d35-11a2-1943-7dd4" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="95.0"/>
@@ -6587,6 +6716,13 @@ Matched Play: Models added to this unit using the Split ability must be paid for
       </selectionEntries>
       <entryLinks>
         <entryLink id="a2d3-650f-6c51-64ab" name="Slaanesh Discipline" hidden="false" collective="false" import="true" targetId="61c2-467c-8620-2a1c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="b3eb-233e-dce4-368e" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3eb-233e-dce4-368e" type="max"/>
           </constraints>
@@ -6615,8 +6751,20 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         </entryLink>
         <entryLink id="fc7b-30e6-1b41-137e" name="Warlord Traits (Slaanesh)" hidden="false" collective="false" import="true" targetId="a671-d25a-4ef4-3e5d" type="selectionEntryGroup"/>
         <entryLink id="ce77-d806-2986-ba80" name="Hellforged Artefacts" hidden="false" collective="false" import="true" targetId="c4c5-0f49-b602-2d74" type="selectionEntryGroup"/>
-        <entryLink id="a16f-8d78-8773-ab54" name="Is a Custom Character" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
+        <entryLink id="a16f-8d78-8773-ab54" name="Is a Custom Character (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
         <entryLink id="5e7b-dd78-c0d1-490e" name="Custom Character Selections (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
+        <entryLink id="3fed-9560-7d5a-025a" name="Noctic Discipline" hidden="false" collective="false" import="true" targetId="ff95-3e69-8fd3-2c86" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="7a43-32a4-039c-5b7a" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="61c2-467c-8620-2a1c" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a43-32a4-039c-5b7a" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="130.0"/>
@@ -7220,23 +7368,6 @@ Matched Play: Models added to this unit using the Split ability must be paid for
       </costs>
     </selectionEntry>
     <selectionEntry id="2672-8419-33c0-5026" name="Seekers" page="0" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="e356-c769-5920-6e14" value="10.0">
-          <conditions>
-            <condition field="selections" scope="2672-8419-33c0-5026" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="e356-c769-5920-6e14" value="15.0">
-          <conditions>
-            <condition field="selections" scope="2672-8419-33c0-5026" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="e356-c769-5920-6e14" value="20.0">
-          <conditions>
-            <condition field="selections" scope="2672-8419-33c0-5026" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="db07-8581-8c21-4798" name="Unholy Speed" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -7285,7 +7416,7 @@ Matched Play: Models added to this unit using the Split ability must be paid for
           <costs>
             <cost name="pts" typeId="points" value="18.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="1.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7344,7 +7475,6 @@ Matched Play: Models added to this unit using the Split ability must be paid for
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dcac-d432-18ef-cb46" name="Exalted Seeker Chariot" page="" hidden="false" collective="false" import="true" type="model">
@@ -7533,6 +7663,33 @@ Matched Play: Models added to this unit using the Split ability must be paid for
           </conditionGroups>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <comment>Faction keywords</comment>
+          <modifiers>
+            <modifier type="add" field="category" value="dfc5-aa04-9546-1b4c">
+              <conditions>
+                <condition field="selections" scope="253a-9e51-cf96-b0d5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f778-4032-27f7-7f2c" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" field="category" value="0fb6-fcaf-b180-5dda">
+              <conditions>
+                <condition field="selections" scope="253a-9e51-cf96-b0d5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26eb-4bc7-7470-39ee" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" field="category" value="1da2-76db-f76f-6b6c">
+              <conditions>
+                <condition field="selections" scope="253a-9e51-cf96-b0d5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecdf-3215-7463-71df" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" field="category" value="012f-abfc-397b-3519">
+              <conditions>
+                <condition field="selections" scope="253a-9e51-cf96-b0d5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f89-6f90-969b-7fea" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <profiles>
         <profile id="c42a-c431-c8ff-76b6" name="Daemon Prince of Chaos" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <modifiers>
@@ -7570,6 +7727,7 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <categoryLink id="7b6b-7aba-ea6a-e844" name="New CategoryLink" hidden="false" targetId="0bc5-6451-5612-4a25" primary="false"/>
         <categoryLink id="a2ff-fe7d-ea53-6162" name="New CategoryLink" hidden="false" targetId="3b77-decb-d468-6bcc" primary="false"/>
         <categoryLink id="22d2-c1dc-2db7-b8c2" name="New CategoryLink" hidden="false" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
+        <categoryLink id="3943-0d9f-26c7-4964" name="Daemon Prince of Chaos" hidden="false" targetId="edf3-0b1b-b8a2-f208" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1245-ef6e-b3cd-ec3d" name="Wings" hidden="false" collective="false" import="true" type="upgrade">
@@ -7636,9 +7794,6 @@ Matched Play: Models added to this unit using the Split ability must be paid for
                 <infoLink id="7897-10f0-819b-8dc6" name="Unstoppable Ferocity" hidden="false" targetId="ea78-399f-19c0-53fa" type="profile"/>
                 <infoLink id="256d-af38-e2d7-3ed8" name="Might over Magic" hidden="false" targetId="da2b-7976-af0f-6e90" type="profile"/>
               </infoLinks>
-              <categoryLinks>
-                <categoryLink id="16f4-1b10-92a9-93f8" name="New CategoryLink" hidden="false" targetId="dfc5-aa04-9546-1b4c" primary="false"/>
-              </categoryLinks>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -7681,7 +7836,6 @@ Matched Play: Models added to this unit using the Split ability must be paid for
                 <infoLink id="2a39-569f-971e-c798" name="Disgustingly Resilient" hidden="false" targetId="36c8-1816-3b23-56e5" type="profile"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="9541-de68-3c91-b2f7" name="New CategoryLink" hidden="false" targetId="0fb6-fcaf-b180-5dda" primary="false"/>
                 <categoryLink id="b12f-6b2b-0bb1-aad6" name="New CategoryLink" hidden="false" targetId="e691-aad7-d21c-1023" primary="false"/>
               </categoryLinks>
               <selectionEntries>
@@ -7700,13 +7854,6 @@ Matched Play: Models added to this unit using the Split ability must be paid for
                   </costs>
                 </selectionEntry>
               </selectionEntries>
-              <entryLinks>
-                <entryLink id="ff16-af4e-8979-7e7f" name="Nurgle Discipline" hidden="false" collective="false" import="true" targetId="c7bb-3d6d-b7b1-6822" type="selectionEntryGroup">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ec2-d82a-1b0e-2447" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -7749,7 +7896,6 @@ Matched Play: Models added to this unit using the Split ability must be paid for
                 <infoLink id="9c2b-34aa-6bea-3f17" name="Quicksilver Swiftness" hidden="false" targetId="879f-7b47-bc3b-f770" type="profile"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="0d29-264f-1408-8d84" name="New CategoryLink" hidden="false" targetId="1da2-76db-f76f-6b6c" primary="false"/>
                 <categoryLink id="d2c7-f713-0685-b95b" name="New CategoryLink" hidden="false" targetId="e691-aad7-d21c-1023" primary="false"/>
               </categoryLinks>
               <selectionEntries>
@@ -7768,13 +7914,6 @@ Matched Play: Models added to this unit using the Split ability must be paid for
                   </costs>
                 </selectionEntry>
               </selectionEntries>
-              <entryLinks>
-                <entryLink id="b145-c822-efd4-677c" name="Slaanesh Discipline" hidden="false" collective="false" import="true" targetId="61c2-467c-8620-2a1c" type="selectionEntryGroup">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aef-75cc-2f0e-2d8d" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -7817,7 +7956,6 @@ Matched Play: Models added to this unit using the Split ability must be paid for
                 <infoLink id="7b35-c183-eea9-7127" name="Ephemeral Form" hidden="false" targetId="9aa8-d31b-2098-9205" type="profile"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="c75e-2cd2-cc4e-bcf3" name="New CategoryLink" hidden="false" targetId="012f-abfc-397b-3519" primary="false"/>
                 <categoryLink id="7e97-ced5-cb6b-f7f2" name="New CategoryLink" hidden="false" targetId="e691-aad7-d21c-1023" primary="false"/>
               </categoryLinks>
               <selectionEntries>
@@ -7836,13 +7974,6 @@ Matched Play: Models added to this unit using the Split ability must be paid for
                   </costs>
                 </selectionEntry>
               </selectionEntries>
-              <entryLinks>
-                <entryLink id="ee38-de8c-cbdc-b0e5" name="Tzeentch Discipline" hidden="false" collective="false" import="true" targetId="4cf2-ae18-9576-c59b" type="selectionEntryGroup">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a3-d9de-16f3-2ce6" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -7897,8 +8028,56 @@ Matched Play: Models added to this unit using the Split ability must be paid for
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="e87a-aa18-d524-319e" name="Is a Custom Character" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
-        <entryLink id="37ca-0974-7c5f-f272" name="Custom Character Selections" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
+        <entryLink id="e87a-aa18-d524-319e" name="Is a Custom Character (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
+        <entryLink id="37ca-0974-7c5f-f272" name="Custom Character Selections (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
+        <entryLink id="89ea-e70b-52f9-6724" name="Nurgle Discipline" hidden="false" collective="false" import="true" targetId="c7bb-3d6d-b7b1-6822" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="253a-9e51-cf96-b0d5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26eb-4bc7-7470-39ee" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0c8-dcbc-523d-001b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2833-9fa1-391f-29de" name="Slaanesh Discipline" hidden="false" collective="false" import="true" targetId="61c2-467c-8620-2a1c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="253a-9e51-cf96-b0d5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdf-3215-7463-71df" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbe7-64da-a044-208c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="26e2-31a5-0e9a-f64b" name="Tzeentch Discipline" hidden="false" collective="false" import="true" targetId="4cf2-ae18-9576-c59b" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="253a-9e51-cf96-b0d5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f89-6f90-969b-7fea" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b82c-eeb9-bb67-9b6e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e888-3538-504c-c37a" name="Noctic Discipline" hidden="false" collective="false" import="true" targetId="ff95-3e69-8fd3-2c86" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="253a-9e51-cf96-b0d5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dba5-1975-db43-2f60" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="150.0"/>
@@ -8190,8 +8369,8 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <entryLink id="3377-f8e3-4913-35c2" name="Battle Honours" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="175.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="9.0"/>
+        <cost name="pts" typeId="points" value="160.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="8.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -8353,7 +8532,7 @@ Matched Play: Models added to this unit using the Split ability must be paid for
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="550.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="35.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="28.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -8402,7 +8581,7 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <categoryLink id="023d-a135-485d-6ef6" name="New CategoryLink" hidden="false" targetId="dfc5-aa04-9546-1b4c" primary="false"/>
         <categoryLink id="044a-a470-dac7-e924" name="New CategoryLink" hidden="false" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
         <categoryLink id="89b8-92b6-e584-b920" name="New CategoryLink" hidden="false" targetId="3b77-decb-d468-6bcc" primary="false"/>
-        <categoryLink id="4200-fde7-ebe3-25d2" name="Daemon Prince" hidden="false" targetId="761d-8f06-b39f-4bc7" primary="false"/>
+        <categoryLink id="4eab-a8d5-16ea-90df" name="Daemon Prince" hidden="false" targetId="d8d3-6bf7-9b21-8e58" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f794-f8df-f51e-18b0" name="Executioner&apos;s Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -8759,7 +8938,7 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="28.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="35.0"/>
         <cost name="pts" typeId="points" value="700.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
@@ -8961,7 +9140,7 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <categoryLink id="0151-2a32-7839-fbaa" name="New CategoryLink" hidden="false" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
         <categoryLink id="0a15-6cdc-50d2-e9f9" name="New CategoryLink" hidden="false" targetId="3b77-decb-d468-6bcc" primary="false"/>
         <categoryLink id="e108-93bc-d617-a048" name="New CategoryLink" hidden="false" targetId="0fb6-fcaf-b180-5dda" primary="false"/>
-        <categoryLink id="22c3-5371-9039-1d64" name="Daemon Prince" hidden="false" targetId="761d-8f06-b39f-4bc7" primary="false"/>
+        <categoryLink id="e606-bae5-f9f0-1f3d" name="Daemon Prince" hidden="false" targetId="d8d3-6bf7-9b21-8e58" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="021d-c18f-6fec-8c13" name="Contagion spray" hidden="false" collective="false" import="true" type="upgrade">
@@ -9113,7 +9292,7 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <categoryLink id="bb1d-b7d6-a974-b0c6" name="New CategoryLink" hidden="false" targetId="3b77-decb-d468-6bcc" primary="false"/>
         <categoryLink id="f21d-89b0-3ef3-2313" name="New CategoryLink" hidden="false" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
         <categoryLink id="cc51-ec48-f544-a78b" name="New CategoryLink" hidden="false" targetId="0fb6-fcaf-b180-5dda" primary="false"/>
-        <categoryLink id="b4f0-f946-d2c0-5630" name="Daemon Prince" hidden="false" targetId="761d-8f06-b39f-4bc7" primary="false"/>
+        <categoryLink id="8912-a8a2-a821-e52e" name="Daemon Prince" hidden="false" targetId="d8d3-6bf7-9b21-8e58" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e520-8494-a80d-fd98" name="Gaping maw" hidden="false" collective="false" import="true" type="upgrade">
@@ -9887,7 +10066,7 @@ Matched Play: Models added to this unit using the Split ability must be paid for
           <modifierGroups>
             <modifierGroup>
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c488-0afe-c67e-2606" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c488-0afe-c67e-2606" type="equalTo"/>
               </conditions>
               <modifiers>
                 <modifier type="set" field="hidden" value="false"/>
@@ -10232,9 +10411,9 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <entryLink id="07c9-3a2f-459c-7f44" name="Steed of Slaanesh" hidden="false" collective="false" import="true" targetId="de13-7d5f-b315-8d20" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="18.0"/>
+        <cost name="pts" typeId="points" value="16.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="baf6-8447-86fb-e556" name="Lashes of Torment" hidden="false" collective="true" import="true" type="upgrade">
@@ -12437,8 +12616,8 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <categoryLink id="9641-5a39-9024-e3ed" name="Psyker" hidden="false" targetId="e691-aad7-d21c-1023" primary="false"/>
         <categoryLink id="7d83-5fa9-8292-84cc" name="Daemonette" hidden="false" targetId="31eb-b14e-89a2-73d1" primary="false"/>
         <categoryLink id="0e8d-71e4-a115-817d" name="Herald of Slaanesh" hidden="false" targetId="4ad0-7149-cdc4-7426" primary="false"/>
-        <categoryLink id="ce23-0041-b676-ae17" name="Daemon Prince" hidden="false" targetId="761d-8f06-b39f-4bc7" primary="false"/>
         <categoryLink id="3139-efef-037c-4e0d" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+        <categoryLink id="a64c-c883-72f3-5d32" name="Daemon Prince" hidden="false" targetId="d8d3-6bf7-9b21-8e58" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="403a-7b0c-63a2-4ad3" name="Axe of Dominion" hidden="false" collective="false" import="true" type="upgrade">
@@ -12819,6 +12998,13 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <entryLink id="c21f-6df7-e245-42c8" name="Is a Custom Character" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
         <entryLink id="43fb-a5f8-29be-7315" name="Custom Character Selections" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
         <entryLink id="9cfa-9a4a-8265-d813" name="Slaanesh Discipline" hidden="false" collective="false" import="true" targetId="61c2-467c-8620-2a1c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="3b1e-26b8-d4ca-29e1" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b1e-26b8-d4ca-29e1" type="max"/>
           </constraints>
@@ -12834,6 +13020,18 @@ Matched Play: Models added to this unit using the Split ability must be paid for
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8da-6de2-ae02-0098" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4719-103c-38d5-c01e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="adbf-5985-e691-b3c7" name="Noctic Discipline" hidden="false" collective="false" import="true" targetId="ff95-3e69-8fd3-2c86" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="a9d5-a27f-b37d-c442" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="61c2-467c-8620-2a1c" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9d5-a27f-b37d-c442" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -12935,6 +13133,13 @@ Matched Play: Models added to this unit using the Split ability must be paid for
       </selectionEntries>
       <entryLinks>
         <entryLink id="41c9-5d3c-887a-35e1" name="Slaanesh Discipline" hidden="false" collective="false" import="true" targetId="61c2-467c-8620-2a1c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="8650-ed3b-7076-a466" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff95-3e69-8fd3-2c86" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8650-ed3b-7076-a466" type="max"/>
           </constraints>
@@ -12965,6 +13170,18 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <entryLink id="6b6f-d3ff-abdc-8aee" name="Warlord Traits (Slaanesh)" hidden="false" collective="false" import="true" targetId="a671-d25a-4ef4-3e5d" type="selectionEntryGroup"/>
         <entryLink id="d19d-4ebe-ddfe-6faf" name="Is a Custom Character" hidden="false" collective="false" import="true" targetId="43c4-8968-c599-ad5f" type="selectionEntry"/>
         <entryLink id="9e40-fbb9-59f2-b3f5" name="Custom Character Selections (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="8774-e003-4a50-56c7" type="selectionEntryGroup"/>
+        <entryLink id="5393-07bd-30ae-467e" name="Noctic Discipline" hidden="false" collective="false" import="true" targetId="ff95-3e69-8fd3-2c86" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="e5a3-d7ca-42e7-eb88" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="61c2-467c-8620-2a1c" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a3-d7ca-42e7-eb88" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="105.0"/>
@@ -13149,6 +13366,182 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="c93a-b1ce-64a2-9caf" name="Be&apos;lakor" publicationId="422a-a40e-pubN71142" page="0" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9e6a-d298-3ed0-cdac" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0b0a-bf46-878d-cf7f" name="Be&apos;lakor 1 (9+ wounds remaining)" page="" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">16</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6aca-ec0e-3120-47d3" name="Lord of Torment (Aura)" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While an enemy unit is within 6&quot; of this model, subtract 1 from the Leadership characteristic of models in that unit, and each time a Combat Attrition test is taken for that unit, subtract 1 from that Combat Attrition test.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fc5f-9f94-31a9-7b0a" name="Shadow Form" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an attack is made against this unit, your opponent cannot re-roll the hit roll. Each time an attack is made against the unit, subtract one from that attack&apos;s hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="54e4-ffd6-78e4-964d" name="Be&apos;lakor" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
+          <characteristics>
+            <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">2</characteristic>
+            <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">1</characteristic>
+            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite and 2 powers from the Noctis discipline</characteristic>
+            <characteristic name="Other" typeId="c2e2-f115-0003-5d7b">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ab2e-7625-3f86-8db2" name="Immortal Vigour" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 4+ invulnerable save. Each time a ranged attack is made against the unit, subtract one from the wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="666e-fd70-b831-180a" name="Be&apos;lakor 2 (5-8 wounds remaining)" page="" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cfd1-19b2-247e-5756" name="Be&apos;lakor 3 (1-4 wounds remaining)" page="" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="de35-6d5e-9613-3027" name="The Dark Master (Aura)" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly DAEMON or DISCIPLES OF BE&apos;LAKOR unit (excluding VEHICLE units) is within 6&quot; of this model, each ime a model in that unit makes an attack, re-roll a hit roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="57c3-9927-a215-def8" name="Spiteful Jealousy" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If your army is Battle-forged, you cannot include this model in a Detachment that includes any other DAEMON PRINCE models. Each time this model makes an attack that targets a DAEMON PRINCE model, you can re-roll the hit roll and you can re-roll the wound roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7b4a-f44c-34c1-e5e0" name="New CategoryLink" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
+        <categoryLink id="47da-c1cb-99a3-b22b" name="New CategoryLink" hidden="false" targetId="0bc5-6451-5612-4a25" primary="false"/>
+        <categoryLink id="4745-4d5f-1c19-801f" name="New CategoryLink" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false"/>
+        <categoryLink id="d082-06e3-0a52-a89f" name="New CategoryLink" hidden="false" targetId="3b77-decb-d468-6bcc" primary="false"/>
+        <categoryLink id="ee47-9b61-21c4-55de" name="New CategoryLink" hidden="false" targetId="e691-aad7-d21c-1023" primary="false"/>
+        <categoryLink id="b0e4-f252-7198-19c1" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+        <categoryLink id="f718-9eb5-8a17-5de2" name="New CategoryLink" hidden="false" targetId="5cf1-acf2-ca3b-c2e5" primary="false"/>
+        <categoryLink id="5562-d35d-a23f-0c1d" name="Faction: Khorne" hidden="false" targetId="dfc5-aa04-9546-1b4c" primary="false"/>
+        <categoryLink id="1e49-8bb1-83d8-3c25" name="Faction: Nurgle" hidden="false" targetId="0fb6-fcaf-b180-5dda" primary="false"/>
+        <categoryLink id="d9e6-873e-3a03-0140" name="Faction: Slaanesh" hidden="false" targetId="1da2-76db-f76f-6b6c" primary="false"/>
+        <categoryLink id="0045-334a-9762-7e17" name="Faction: Tzeentch" hidden="false" targetId="012f-abfc-397b-3519" primary="false"/>
+        <categoryLink id="7084-dee0-b487-b8a1" name="Daemon Prince" hidden="false" targetId="d8d3-6bf7-9b21-8e58" primary="false"/>
+        <categoryLink id="140a-86c8-3b7e-5cf9" name="Be&apos;lakor" hidden="false" targetId="cb2e-2f63-133e-a79c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="58da-9886-ec43-4729" name="The Blade of Shadows" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9565-693a-162f-38dd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47a2-56d2-5ce9-5658" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="8256-0931-0cd5-3e25" name="The Blade of Shadows (sweep)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made wit this weapon profile, make 2 hit rolls instead of 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="98ae-04a9-0306-6f29" name="The Blade of Shadows (piercing)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">+4</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon with this weapon profile, invulnerable saving throws cannot be made against that attack.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="18b4-f133-6d55-6a4e" name="The Blade of Shadows" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">-</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">-</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">-</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, select one of the profiles below to make that attack with.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="10de-67d7-cc07-5585" name="Smite" hidden="false" collective="false" import="true" targetId="03fd-db47-5333-1e1f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f788-8605-aa7e-5128" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a88d-746b-2b6b-927b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7970-3606-37d8-d8cd" name="Warlord" hidden="false" collective="false" import="true" targetId="c488-0afe-c67e-2606" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="7f72-61c2-7fe7-d62e" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f72-61c2-7fe7-d62e" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="5dff-dee7-6fa8-9559" name="Shadow Lord" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Command phase, select one friendly DISCIPLES OF BE&apos;LAKOR unit (excluding VEHICLE units) within 9&quot; of this WARLORD. Until the start of your next Command phase, each time a model in that unit makes an attack, you can re-roll the hit roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+        <entryLink id="90a3-51cf-3d4b-20b6" name="Noctic Discipline" hidden="false" collective="false" import="true" targetId="ff95-3e69-8fd3-2c86" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdda-4dce-141e-f47b" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="380.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="19.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="d7f7-3b26-0f3a-8e1e" name="Daemonic Allegiance" hidden="false" collective="false" import="true">
@@ -13303,40 +13696,6 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <entryLink id="e2f0-84ef-fb2d-05c9" name="Gaze of Fate" hidden="false" collective="false" import="true" targetId="0b08-f60f-f797-9081" type="selectionEntry"/>
         <entryLink id="721f-a5bf-c26f-6018" name="Flickering Flames" hidden="false" collective="false" import="true" targetId="e1b4-03eb-ac90-794f" type="selectionEntry"/>
         <entryLink id="dc31-9776-1233-a445" name="Infernal Gateway" hidden="false" collective="false" import="true" targetId="e6bd-3f12-0769-6f84" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="4444-7dd9-84f4-837e" name="Dark Hereticus discipline" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="c463-edf0-ba96-8b96" name="Death Hex" hidden="false" collective="false" import="true" targetId="cff6-fc85-e48e-ef4e" type="selectionEntry"/>
-        <entryLink id="f0ba-d845-dad2-3e5e" name="Diabolic Strength" hidden="false" collective="false" import="true" targetId="5cbf-5425-d551-827c" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="38ee-583c-b397-a057" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="b437-2fd3-f242-c746" name="Warptime" hidden="false" collective="false" import="true" targetId="b4d6-3768-971d-ad4c" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="38ee-583c-b397-a057" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="cfb2-b3fc-e9f9-7a02" name="Prescience" hidden="false" collective="false" import="true" targetId="8961-01db-4a25-4dfe" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="38ee-583c-b397-a057" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="e944-ad7e-5acd-0c7e" name="Gift of Chaos" hidden="false" collective="false" import="true" targetId="2951-ab85-c547-d014" type="selectionEntry"/>
-        <entryLink id="c69b-22ea-b986-bc19" name="Infernal Gaze" hidden="false" collective="false" import="true" targetId="0cf1-0b62-6fe9-6f77" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="aba9-3f3a-756f-6514" name="Warlord Traits (Khorne)" hidden="true" collective="false" import="true">
@@ -14136,6 +14495,143 @@ Matched Play: Models added to this unit using the Split ability must be paid for
         <entryLink id="df8f-e6a6-872f-ecb2" name="Hellforged Artefacts (Tzeentch)" hidden="false" collective="false" import="true" targetId="f71b-8420-0976-3e2d" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="ff95-3e69-8fd3-2c86" name="Noctic Discipline" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88b1-c697-e840-2850" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb2e-2f63-133e-a79c" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry id="9172-d29a-8094-ba9d" name="Shrouded Step" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdbe-86f9-4959-8d8f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="53bf-5f98-1a86-8749" name="Shrouded Step" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing. If manifested, select one friendly DISCIPLES OF BE&apos;LAKOR unit within 18&quot; of this PSYKER. Remove that unit from the battlefield and set them up anywhere on the battlefield that is more than 9&quot; from any enemy models. If that unit Remained Stationary this turn, it is instead treated as having made a Normal Move this turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="490c-b341-071b-862a" name="Wreathed in Shades" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71b1-73ab-f02e-6a5f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="220b-f51e-8ba8-5b42" name="Wreathed in Shades" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing. If manifested, select one friendly DISCIPLES OF BE&apos;LAKOR unit (excluding MONSTER and VEHICLE units) within 12&quot; of this PSYKER. Until the start of your next Psychic phase, enemy models cannot target that unit with ranged weapons unless that unit is the closest eligible target to the firing model or it is within 12&quot; of the firing model.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c4ea-18a1-f43c-b7e1" name="Pall of Despair" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc74-a08b-8275-05b6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="444e-09df-41b6-ec06" name="Pall of Despair" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction. If manifested, select one enemy unit that is within 18&quot; of and visible to this PSYKER. Roll 3D6; if the result is greater than the enemy unit&apos;s Leadership characteristic, select one of the following to apply to that unit until the start of your next Psychic phase.
+
+- If that unit has any Aura abilities, select one of those abilities. Until the start of your next Psychic phase, that unit loses that ability.
+- Until the start of your next Psychic phase, that unit cannot perform actions (if that unit is currently performing an action, it immediately fails).
+- Until the start of your next Psychic phase, in the Fight phase, that unit is not eligible to fight that phase until after all eligible units from your army have done so.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f29b-9d22-e075-45ca" name="Voidslivers" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="293f-00fc-c8e7-ef8a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="69f8-04c3-2b14-7a4a" name="Voidslivers" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">5</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire. If manifested, select one enemy model within 12&quot; of and visible to this PSYKER. Draw a line between any part of this PSYKER&apos;s base and any part of the selected model&apos;s base (or hull):
+
+- The selected model&apos;s unit suffers 1 mortal wound (if that unit contains 11 or more models, it suffers D3 mortal wounds instead).
+- Every other enemy unit that this line passes over or through suffers 1 mortal wound (if that unit contains 11 or more models, it suffers D3 mortal wounds instead).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f561-b394-9d0e-b12e" name="Penumbral Curse" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74c3-6867-e5bf-d30b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="373b-fd0b-607f-40ef" name="Penumbral Curse" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Malediction. If manifested, select one enemy unit within 18&quot; of this PSYKER. Until the start of your next Psychic phase, each time a model in that unit makes a melee attack, subtract 1 from that attack&apos;s wound roll and reduce the Armour Penetration characteristic of that attack by 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="27a5-af0b-c2aa-4888" name="Betraying Shades" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fda9-0676-8418-836d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="555c-c849-7ce4-91db" name="Betraying Shades" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">6</characteristic>
+                <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Witchfire. If manifested, select one enemy unit within 18&quot; of and visible to this PSYKER. Select up to 6 models in that unit, and add together the unmodified Attacks characteristics of those models. Roll a number of D6 equal to the total (for example, if five of the selected models had an Attacks characteristic of 2, and one had an Attacks characteristic of 3, you would roll thirteen D6). If the result of the Psychic test was 11 or more, add 1 to each dice result. For each roll of 6+, that unit suffers 1 mortal wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="224f-2c86-454d-54aa" name="Daemonic Ritual" hidden="false">
@@ -14255,7 +14751,9 @@ If your summoning roll included any doubles, your character then suffers a morta
       <characteristics>
         <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">7</characteristic>
         <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-        <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">If manifested, select a friendly NURGLE DAEMON unit within 18&quot; of the psyker. Add 1 to wound rolls made by that unit in the Fight phase. Furthermore, wound rolls of 7+ made for that unit in the Fight phase inflict double damage.</characteristic>
+        <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">If manifested, select a friendly NURGLE DAEMON unit within 18&quot; of the psyker. Until the start of your next Psychic phase:
+- Add 1 to wound rolls made for that unit in the Fight phase. 
+- Wound rolls of 7+ made for that unit in the Fight phase inflict double  damage.</characteristic>
       </characteristics>
     </profile>
     <profile id="4da7-5d51-080e-fd9e" name="Fleshy Abundance" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">

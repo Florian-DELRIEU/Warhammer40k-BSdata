@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7d24-b92f-c5d5-3bf0" name="Aeldari - Harlequins" revision="53" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@WindstormSCR @FarseerV" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="178" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7d24-b92f-c5d5-3bf0" name="Aeldari - Harlequins" revision="59" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@WindstormSCR @FarseerV" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="204" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7d24-b92f-pubN65537" name="Codex: Harlequins"/>
   </publications>
@@ -521,10 +521,10 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bad4-2ef7-c361-8d81" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="82d6-27de-e8b3-3a69" name="New EntryLink" hidden="false" collective="false" import="true" targetId="3065-08db-9433-d9f8" type="selectionEntry"/>
+            <entryLink id="82d6-27de-e8b3-3a69" name="Harlequin&apos;s Blade" hidden="false" collective="false" import="true" targetId="3065-08db-9433-d9f8" type="selectionEntry"/>
             <entryLink id="cc4b-b56b-e3b3-04c9" name="New EntryLink" hidden="false" collective="false" import="true" targetId="4f51-c975-5042-dca4" type="selectionEntry"/>
             <entryLink id="6c46-3fd0-ca09-55d3" name="New EntryLink" hidden="false" collective="false" import="true" targetId="fddb-199b-84b4-280f" type="selectionEntry"/>
-            <entryLink id="df73-2a15-9a1c-8ccd" name="New EntryLink" hidden="false" collective="false" import="true" targetId="29c4-069f-247a-d22b" type="selectionEntry"/>
+            <entryLink id="df73-2a15-9a1c-8ccd" name="Harlequin&apos;s Caress" hidden="false" collective="false" import="true" targetId="29c4-069f-247a-d22b" type="selectionEntry"/>
             <entryLink id="0494-601c-7e17-07fc" name="Power sword" hidden="false" collective="false" import="true" targetId="bc9e-551d-9afb-78d5" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
@@ -538,7 +538,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cbb-b841-8b91-190f" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="0396-a08d-abf2-4989" name="New EntryLink" hidden="false" collective="false" import="true" targetId="0ecc-ffa4-aa9f-a698" type="selectionEntry"/>
+            <entryLink id="0396-a08d-abf2-4989" name="Fusion Pistol" hidden="false" collective="false" import="true" targetId="0ecc-ffa4-aa9f-a698" type="selectionEntry"/>
             <entryLink id="6624-da15-091a-82e2" name="New EntryLink" hidden="false" collective="false" import="true" targetId="dc08-7a78-9af8-9b6f" type="selectionEntry"/>
             <entryLink id="0b74-5abc-c275-bff5" name="Shuriken Pistol" hidden="false" collective="false" import="true" targetId="00b1-e9ab-61a3-292e" type="selectionEntry"/>
           </entryLinks>
@@ -587,7 +587,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ebb3-4f37-6e57-7a8e" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4981-9c64-7ab7-7edc" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -668,7 +668,7 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="5.0"/>
-        <cost name="pts" typeId="points" value="102.0"/>
+        <cost name="pts" typeId="points" value="100.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -731,7 +731,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8391-f436-91e5-cd36" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c3e5-94c3-a5ba-610d" name="New EntryLink" hidden="false" collective="false" import="true" targetId="dc08-7a78-9af8-9b6f" type="selectionEntry"/>
+            <entryLink id="c3e5-94c3-a5ba-610d" name="Neuro Disruptor" hidden="false" collective="false" import="true" targetId="dc08-7a78-9af8-9b6f" type="selectionEntry"/>
             <entryLink id="039d-0e67-ae8a-5d60" name="Shuriken Pistol" hidden="false" collective="false" import="true" targetId="00b1-e9ab-61a3-292e" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -1031,7 +1031,7 @@
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="5.0"/>
-        <cost name="pts" typeId="points" value="90.0"/>
+        <cost name="pts" typeId="points" value="80.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1114,7 +1114,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deed-5e1c-024b-d7c5" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="a8bf-701f-a210-81ea" name="New EntryLink" hidden="false" collective="false" import="true" targetId="e2fb-277f-b1db-836b" type="selectionEntry"/>
+                <entryLink id="a8bf-701f-a210-81ea" name="Haywire Cannon" hidden="false" collective="false" import="true" targetId="e2fb-277f-b1db-836b" type="selectionEntry"/>
                 <entryLink id="dc56-dc99-421c-05e4" name="Shuriken Cannon" hidden="false" collective="false" import="true" targetId="c791-d8b1-80d1-d707" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="points" value="0.0"/>
@@ -1644,7 +1644,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ce0-03a1-ec03-76aa" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2ce0-03a1-ec03-76aa" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0742-4cb7-bf4e-16cc" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc1c-c3ca-66fa-fd12" type="equalTo"/>
               </conditions>
@@ -1652,14 +1652,9 @@
           </conditionGroups>
         </modifier>
         <modifier type="increment" field="d3e1-1778-7f2f-7def" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ce0-03a1-ec03-76aa" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4981-9c64-7ab7-7edc" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ce0-03a1-ec03-76aa" type="equalTo"/>
+          </conditions>
         </modifier>
         <modifier type="increment" field="d3e1-1778-7f2f-7def" value="1.0">
           <conditions>
@@ -1701,7 +1696,7 @@
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1111-49b8-eb81-09b8" name="Cegroach&apos;s Lament" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1111-49b8-eb81-09b8" name="Cegorach&apos;s Lament" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -1713,7 +1708,7 @@
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e688-32b8-8081-c64a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="3ea8-c22a-4928-3787" name="Cegroach&apos;s Lament (Shuriken)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile id="3ea8-c22a-4928-3787" name="Cegorach&apos;s Lament (Shuriken)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 3</characteristic>
@@ -1723,7 +1718,7 @@
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
               </characteristics>
             </profile>
-            <profile id="4cac-ad5c-a113-557e" name="Cegroach&apos;s Lament (Wail)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile id="4cac-ad5c-a113-557e" name="Cegorach&apos;s Lament (Wail)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
@@ -1733,7 +1728,7 @@
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
               </characteristics>
             </profile>
-            <profile id="4def-c6c8-beff-87e4" name="Cegroach&apos;s Lament" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile id="4def-c6c8-beff-87e4" name="Cegorach&apos;s Lament" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464"/>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
@@ -1820,6 +1815,23 @@
 4. +1 to the bearer&apos;s Wounds characteristic
 5. +3&quot; to the bearer&apos;s Move characteristic
 6. Improve the Armour Penetration characteristic of the bearer&apos;s melee weapons by 1 (e.g. AP-1 becomes AP-2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="aba3-ad4b-b1d6-f45f" name="The Veil of Tears" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ff04-4942-3298-fa45" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3269-4a58-c93c-932e" name="The Veil of Tears" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per turn, the first time a saving throw is failed for the bearer, that saving throw is treated as being successful.</characteristic>
               </characteristics>
             </profile>
           </profiles>

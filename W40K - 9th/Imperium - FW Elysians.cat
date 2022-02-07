@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62ed-66a0-988c-e34e" name="Imperium - Elysian Drop Troops" revision="97" battleScribeVersion="2.03" authorName="Jon K, Joe B" authorContact="Discord: @Alphalas, @CrusherJoe | Twitter: @_alphalas, @theawesomesauce" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="178" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62ed-66a0-988c-e34e" name="Imperium - Elysian Drop Troops" revision="102" battleScribeVersion="2.03" authorName="Jon K, Joe B" authorContact="Discord: @Alphalas, @CrusherJoe | Twitter: @_alphalas, @theawesomesauce" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="200" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="62ed-66a0-pubN69354" name="Codex: Astra Militarum"/>
     <publication id="62ed-66a0-pubN91709" name="Codex: Genestealer Cults"/>
@@ -392,18 +392,6 @@
         <categoryLink id="06c0-e635-c71f-5992" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
         <categoryLink id="f0a7-77bc-6a8d-d3a4" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
         <categoryLink id="1ce3-71e0-b968-bb81" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="0272-939f-5813-aa9f" name="Ephrael Stern and Kyganil of the Bloody Tears" hidden="false" collective="false" import="true" targetId="7dca-e055-7a15-4bf3" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cff6-a8e7-27ea-0776" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="43ca-f98f-6196-1f1c" name="New CategoryLink" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f777-d54b-e759-e6d5" name="Gorgon Heavy Transporter" hidden="false" collective="false" import="true" targetId="066c-5ca9-3a9a-1c60" type="selectionEntry">
@@ -1033,7 +1021,8 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="1d92-5541-342f-89e8" name="New CategoryLink" hidden="false" targetId="ee49-6d10-3f67-51a1" primary="true"/>
+        <categoryLink id="1d92-5541-342f-89e8" name="New CategoryLink" hidden="false" targetId="ee49-6d10-3f67-51a1" primary="false"/>
+        <categoryLink id="6fcf-14ca-6d26-8308" name="New CategoryLink" hidden="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e6f0-144e-6770-2a26" name="Tauros Assault Vehicle" hidden="false" collective="false" import="true" targetId="26bd-4dc8-d2d2-6769" type="selectionEntry">
@@ -1187,6 +1176,11 @@
         <categoryLink id="e944-ade5-d6ec-a87c" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="a679-d544-131e-5f27" name="Gaunt&apos;s Ghosts" hidden="false" collective="false" import="true" targetId="cf93-9d4b-ee8a-1fe2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5e08-aec4-85f2-0bf2" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c8ab-2564-efd1-9dc4" name="Elysian Drop Sentinels [Legends]" hidden="false" collective="false" import="true" type="unit">
@@ -1254,6 +1248,9 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="191a-f6dd-4a46-39c0" type="max"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
             </entryLink>
             <entryLink id="9611-ac7f-54b3-f7e1" name="Unit has battle honors?" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
             <entryLink id="e68c-8390-c981-9833" name="Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
