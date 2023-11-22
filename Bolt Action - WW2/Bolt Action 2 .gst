@@ -55,7 +55,7 @@
         <categoryLink id="c9f7-bd9c-29ff-3880" name="Headquarters" hidden="false" targetId="481abf13-c03e-0dd0-d520-9f9837253cbe" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a73d-ca8c-d1d8-d200" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afc7-c4d1-a91b-3d64" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afc7-c4d1-a91b-3d64" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="ac46-664f-76ed-cdc6" name="Infantry" hidden="false" targetId="5c47879b-41d0-1383-5fe5-a5989615db89" primary="false">
@@ -67,6 +67,18 @@
         <categoryLink id="5b8c-110e-1155-7af6" name="Infantry Support" hidden="false" targetId="a01f5f58-334c-8442-d861-15099ebdf5e5" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cea-940f-15cc-92bd" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d1c0-0c0c-db45-7e49" name="Transports" hidden="false" targetId="963d0e80-c58a-29e1-9b32-87e8ef7ebb0e" primary="false">
+          <modifiers>
+            <modifier type="increment" field="5ee6-bede-bfc0-fda3" value="1.0">
+              <conditions>
+                <condition field="selections" scope="cd4b-73f6-7d79-84bf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c47879b-41d0-1383-5fe5-a5989615db89" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="cd4b-73f6-7d79-84bf" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ee6-bede-bfc0-fda3" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
