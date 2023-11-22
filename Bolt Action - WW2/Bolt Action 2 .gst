@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="d373-d979-116c-5487" name="Bolt Action 2.0" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="d373-d979-116c-5487" name="Bolt Action 2.0" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="d373-d979-pubN70886" name="Tank War"/>
     <publication id="d373-d979-pubN74158" name="Tank Wars"/>
@@ -48,6 +48,29 @@
   </categoryEntries>
   <forceEntries>
     <forceEntry id="3e12-a195-712f-6413" name="None" hidden="true"/>
+    <forceEntry id="cd4b-73f6-7d79-84bf" name="Infantry Company" hidden="false">
+      <comment>Compagnie d&apos;infanterie composée de plusieurs escouades et de supports
+</comment>
+      <categoryLinks>
+        <categoryLink id="c9f7-bd9c-29ff-3880" name="Headquarters" hidden="false" targetId="481abf13-c03e-0dd0-d520-9f9837253cbe" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a73d-ca8c-d1d8-d200" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afc7-c4d1-a91b-3d64" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ac46-664f-76ed-cdc6" name="Infantry" hidden="false" targetId="5c47879b-41d0-1383-5fe5-a5989615db89" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9ed-f8ef-e0fc-6239" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db88-6091-f395-9e36" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5b8c-110e-1155-7af6" name="Infantry Support" hidden="false" targetId="a01f5f58-334c-8442-d861-15099ebdf5e5" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cea-940f-15cc-92bd" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
     <selectionEntry id="5d9a-f62c-bd6d-c2a4" name="2 turret-mounted MMG" page="0" hidden="false" collective="false" import="true" type="upgrade">
